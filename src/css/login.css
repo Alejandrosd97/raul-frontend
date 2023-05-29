@@ -1,0 +1,10 @@
+.login-contenedor{
+    width: 90%;
+    max-width: 400px;
+    margin:auto;
+}
+
+.login-contenedor form{
+    display: flex;
+    flex-direction: column;
+}

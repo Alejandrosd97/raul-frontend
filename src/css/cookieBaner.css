@@ -1,0 +1,43 @@
+.cookie-banner{
+    position:fixed;
+    z-index:100;
+    bottom:10px;
+    right: 10px;
+    width:90%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.cookie-banner h3{
+    color: hsl(209, 100%, 31%)
+}
+
+.mas-informacion{
+    font-weight: bold;
+}
+
+.mas-informacion:hover{
+    color:black
+}
+
+.cookie-buttons{
+    display: flex;
+    justify-content:flex-end;
+    gap:20px;
+}
+
+.aceptar-button{
+    background-color: hsla(209, 100%, 31%, 80%);
+    color: white;
+}
+
+.aceptar-button:hover{
+    background-color: hsla(209, 100%, 31%, 100%);
+    color: white;
+}
+
+.hidden{
+    display:none
+}

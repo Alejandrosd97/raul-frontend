@@ -1,0 +1,43 @@
+.contenedor-colab{
+    width: 100%;
+    background-color: hsla(209, 100%, 31%, 2%);
+    padding:30px 0px;
+}
+
+.colaboraciones{
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.colaboracion{
+    width:100%;
+    margin-bottom:20px;
+}
+
+.colaboracion p{
+    text-align:center;
+    font-size:20px;
+    margin:0px;
+    font-weight:bold;
+}
+
+.colaboracion img{
+    width:100%;
+}
+
+@media screen and (min-width:600px){
+    .colaboraciones {
+        display: flex;
+        justify-content: space-between;
+        gap: 150px;
+    }
+
+    .colaboracion img {
+        width: 80%;
+        display:block;
+        margin:auto;
+    }
+
+}
+

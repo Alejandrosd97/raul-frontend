@@ -1,0 +1,137 @@
+.header-img{
+  width: 100%;
+  max-width:1180px;
+  display:block;
+  margin:auto;
+  height: calc(100vh - 180px);
+  object-fit:cover;
+  object-position: 0% 20% 
+}
+
+
+@media screen and (max-width:499px) {
+  .header-img {
+    height: 30vh;
+  }
+
+  .post-img{
+    height: 250px !important;
+  }
+}
+
+@media screen and (min-width:499px) and (orientation: portrait) {
+  .header-img {
+    height: 40vh;
+  }
+}
+
+h1{
+  text-align:center;
+  margin-top:20px;
+  margin-bottom:20px
+}
+
+.posts-h2{
+  margin-top: 50px;
+  margin-bottom:30px;
+}
+
+.container{ 
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px;
+  background-color: hsla(209, 100%, 31%, 1%);
+  margin-top:20px;
+}
+
+.filtros{
+  display: flex;
+  width: 100%;
+  gap:15px;
+  width: 100%;
+  justify-content: center;
+}
+
+.filtros li{
+  cursor:pointer;
+}
+
+.filtro-active{
+  font-weight: bold;
+}
+
+.post{
+  flex-basis: 390px;
+  flex-grow: 1;
+  margin-bottom:20px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  
+}
+
+.post-img{
+  width:100%;
+  height: 290px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow:hidden;
+}
+
+.post-img img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  transform:scale(1);
+  transition:0.5s ease;
+
+}
+
+.post-img img:hover{
+  transform:scale(1.2);
+  transition:0.5s ease;
+}
+
+.post-text{
+  padding:10px;
+  text-align: justify;
+  text-justify: inter-word;
+  color: black;
+}
+
+.post-text p{
+  display:-webkit-box;
+  -webkit-line-clamp:6;
+  -webkit-box-orient:vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post-title{
+  text-transform: capitalize; 
+  color: rgba(0, 82, 158, 1);
+}
+
+.post-category,
+.post-date {
+  color: rgba(0, 82, 158, 0.5);
+}
+
+.post-text h3{
+  margin:0
+}
+
+.pagination-container ul{
+  width: 90%;
+  margin:auto;
+  justify-content: center;
+}
+
+@media screen and (min-width:900px){
+  .post:last-child {
+      flex-grow: 1;
+      max-width: calc(50% - 10px);
+    }
+}

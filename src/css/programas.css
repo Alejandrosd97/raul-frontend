@@ -1,0 +1,36 @@
+.patients-container{
+    width: 90%;
+    margin:auto;
+    
+}
+
+.create-video{
+    display:block;
+    width:auto;
+    margin:auto;
+    margin-bottom:10px;
+}
+
+.video-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap:20px
+}
+
+
+.filtros {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+}
+
+.filtros li {
+    cursor: pointer;
+}
+
+.filtro-active {
+    font-weight: bold;
+}

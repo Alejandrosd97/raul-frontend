@@ -1,0 +1,45 @@
+iframe{
+    width: 90%;
+    display: block;
+    height:300px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.clicked{
+    padding: 0.25em 0.5em;
+    background-color: #004e98;
+    color:white;
+    border-radius: 5px;
+}
+
+.not-clicked{
+    color:#004e98;
+}
+
+.not-clicked, .clicked{
+    font-size: 1.25rem;
+    font-family:inherit;
+    margin-bottom: 20px;
+}
+
+
+
+.cambiar-mapa{
+    display:flex;
+    justify-content:center;
+}
+
+
+@media screen and (min-width:700px){
+    iframe{
+        height:420px
+    }
+}
+
+
+@media screen and (min-width:978px){
+    iframe{
+        height:510px
+    }
+}

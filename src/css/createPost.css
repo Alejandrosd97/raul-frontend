@@ -1,0 +1,32 @@
+.post-contenedor{
+    width: 90%;
+    max-width: 600px;
+    display:flex;
+    flex-direction:column;
+    margin:auto;
+    gap:10px;
+}
+
+#contenido{
+    height: 400px;
+}
+
+#description{
+    height:200px;
+}
+
+.create-post-btns{
+    display: flex;
+    gap: 10px;
+}
+
+.create-post-btns button{
+    width:50%;
+}
+
+label{
+    margin-top: 10px;
+    display: inline-block;
+    font-size:20px;
+}
+
