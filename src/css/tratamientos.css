@@ -1,15 +1,13 @@
 .tratamientos-bloque{
     display: flex;
-    flex-direction:column;
     gap:30px;
-    justify-content: center;
 }
-
+/*
 .tratamiento{
     text-align:center;
     background-color: hsla(209, 100%, 31%, 3%);
 }
- 
+  
 .tratamiento-img{
     width:100%;
     height: 270px;
@@ -66,5 +64,5 @@
         object-fit: cover;
         object-fit: 50% 20%;
         display: block;
-    }
-}
+    
+} */

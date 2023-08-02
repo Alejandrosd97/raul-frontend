@@ -99,6 +99,27 @@
     background-color: rgba(0, 82, 158, 1);
 }
 
+.whats-link {
+    display: block
+}
+
+.whats-btn {
+    background-color: rgba(37, 211, 102, 0.8);
+    padding: 8px 16px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.whats-btn:hover {
+    background-color: rgba(37, 211, 102, 1);
+}
+
 
 @media screen and (min-width:550px) and (max-width:767px){
     .carrusel-gandia {

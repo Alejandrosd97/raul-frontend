@@ -11,6 +11,7 @@ import textoAleman from '../assets/dataAleman'
 import Contact from './Contact'
 import Cookies from './Cookies'
 import Colaboraciones from './Colaboraciones'
+import Navbar from './Navbar'
 
 
 
@@ -33,6 +34,7 @@ export default function MainPage() {
 	}
   return (
     <div>
+		<Navbar/>
       <Hero texto={texto} />
       <Gandia texto={texto}/>
       <Denia texto={texto}/>
@@ -41,7 +43,7 @@ export default function MainPage() {
       <Mapas/>
 	  <Contact/>
 	  {/* <Colaboraciones/> */}
-	  <Cookies/>
+	  {/* <Cookies/> */}
     </div>
   )
 }

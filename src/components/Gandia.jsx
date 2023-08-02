@@ -2,8 +2,17 @@ import React, { useEffect, useContext } from 'react'
 import '../css/gandia.css'
 import clinica_gandia2 from '/src/assets/imgs/clinica_iphone.jpg'
 import clinica_gandia3 from '/src/assets/imgs/clinica_fuera.jpg'
+import clinica_gandia4 from '/src/assets/imgs/clinica_nueva_3.jpg'
+import clinica_gandia5 from '/src/assets/imgs/clinica_nueva_1.jpg'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { BsWhatsapp } from "react-icons/bs" 
+
+
 
 import { IdiomaContext } from '../App'
+
+
 
  
 
@@ -14,8 +23,12 @@ function Gandia() {
     const {idioma} = useContext(IdiomaContext)
 
     const [index, setIndex] = React.useState(0)
-    const arrayFotos = [clinica_gandia2, clinica_gandia3]
+    const arrayFotos = [clinica_gandia5, clinica_gandia4, clinica_gandia2, clinica_gandia3]
 
+
+    useEffect(()=>{
+        AOS.init({duration:2000})
+    },[])
 
     function cambioFoto() {
 
@@ -45,7 +58,7 @@ function Gandia() {
 
         <section className='gandia'>
 
-            <div className='clinica-gandia'>
+            <div data-aos='fade-left' className='clinica-gandia'>
                 <div className='carrusel-gandia'>
                     {/* <button onClick={fotoAnterior} className='arrow left'>&#10229;</button> */}
                     <img src={arrayFotos[index]} />
@@ -66,6 +79,8 @@ function Gandia() {
                             {idioma[1].clinicas[0].clinicaGandiaTelefono} <span className='bold'>666 33 83 08</span>
                         </p>
                         <a className='boton-mapa-gandia' href="#mapa">{idioma[1].clinicas[0].clinicaGandiaComoLlegar}</a>
+                        <a className='whats-link' href="https://wa.me/34675644493" target='_blank'><button className='whats-btn'><BsWhatsapp/>Contacta por Whatsapp</button></a>
+
                     </div>
                 </div>
             </div>

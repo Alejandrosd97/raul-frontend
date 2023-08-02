@@ -1,8 +1,11 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import '../css/denia.css'
 import clinica_denia from '/src/assets/imgs/clinica_denia.jpg'
 import clinica_denia2 from '/src/assets/imgs/clinica_denia2.jpg'
 import clinica_denia3 from '/src/assets/imgs/clinica_denia3.jpg'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { BsWhatsapp } from "react-icons/bs" 
 
 import { IdiomaContext } from '../App'
 
@@ -42,6 +45,10 @@ function Denia(props){
     //     })
     //}
 
+    useEffect(()=>{
+        AOS.init({duration:2000})
+    },[])
+
      function cambioFoto() {
 
         setIndex(function(prevIndex){
@@ -55,7 +62,7 @@ function Denia(props){
         setTimeout(cambioFoto, 5000)
     }
 
-    React.useEffect(() => {
+    useEffect(() => {
     const timer = setTimeout(() => {
       cambioFoto()
     }, 5000);
@@ -70,7 +77,7 @@ function Denia(props){
     const {texto, cambiarMapa}= props
     return(
         <section className='denia'>
-            <div className='clinica-denia'>
+            <div data-aos='fade-right' className='clinica-denia'>
                 <div className='descripcion-denia'>
                     <div className='desc-denia'>
                         <h3>Denia</h3>
@@ -88,6 +95,7 @@ function Denia(props){
                             className='boton-mapa' 
                             value='denia'
                             href="#mapa">{idioma[0].navbar.comoLlegar}</a>
+                        <a className='whats-link' target='_blank' href="https://wa.me/34675644493"><button className='whats-btn'><BsWhatsapp/>Contacta por Whatsapp</button></a>
                 </div>
                 </div>  
         

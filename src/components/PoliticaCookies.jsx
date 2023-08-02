@@ -10,7 +10,7 @@ function PoliticaCookies() {
        
         <p>En esta web se utilizan cookies de terceros y propias para conseguir que tengas una mejor experiencia de navegación, puedas compartir contenido en redes sociales y para que podamos obtener estadísticas de los usuarios.</p>
 
-         <p>Puedes evitar la descarga de cookies a través de la configuración de tu navegador, evitando que las cookies se almacenen en su dispositivo.</p>  
+        <p>Puedes evitar la descarga de cookies a través de la configuración de tu navegador, evitando que las cookies se almacenen en su dispositivo.</p>  
 
         <p>Como propietario de este sitio web, te comunico que no utilizamos ninguna información personal procedente de cookies, tan sólo realizamos estadísticas generales de visitas que no suponen ninguna información personal.</p>
         
@@ -19,7 +19,7 @@ function PoliticaCookies() {
         <p>Según los términos incluidos en el artículo 22.2 de la Ley 34/2002 de Servicios de la Sociedad de la Información y Comercio Electrónico, si continúas navegando, estarás prestando tu consentimiento para el empleo de los referidos mecanismos.</p>
 
     <h3>Entidad Responsable</h3> 
-        <p>La entidad responsable de la recogida, procesamiento y utilización de tus datos personales, en el sentido establecido por la Ley de Protección de Datos Personales es la página dkfd, propiedad de dfdbb dgfeger wefgdbdv – c/ benicanena 78.</p>
+        <p>La entidad responsable de la recogida, procesamiento y utilización de tus datos personales, en el sentido establecido por la Ley de Protección de Datos Personales es la página raulfisio.com, propiedad de Raulfisio – c/ Clot de la mota 27 bajo.</p>
 
     <h3>¿Qué son las cookies?</h3> 
         <p>Las cookies son un conjunto de datos que un servidor deposita en el navegador del usuario para recoger la información de registro estándar de Internet y la información del comportamiento de los visitantes en un sitio web. Es decir, se trata de pequeños archivos de texto que quedan almacenados en el disco duro del ordenador y que sirven para identificar al usuario cuando se conecta nuevamente al sitio web. Su objetivo es registrar la visita del usuario y guardar cierta información. Su uso es común y frecuente en la web ya que permite a las páginas funcionar de manera más eficiente y conseguir una mayor personalización y análisis sobre el comportamiento del usuario.</p>
@@ -30,7 +30,7 @@ function PoliticaCookies() {
 
 <p>Las cookies, en función de su permanencia, pueden dividirse en cookies de sesión o permanentes. Las que expiran cuando el usuario cierra el navegador. Las que expiran en función de cuando se cumpla el objetivo para el que sirven (por ejemplo, para que el usuario se mantenga identificado en los servicios de dfdbb dgfeger wefgdbdv) o bien cuando se borran manualmente.</p>
 
-<table>
+{/* <table>
     <tr>
         <th>Nombre</th>
         <th>Tipo</th>
@@ -67,7 +67,7 @@ function PoliticaCookies() {
         <td>Almacena el origen o la campaña que explica cómo el usuario ha llegado hasta la página web</td>
         <td>No Exenta</td>
     </tr>
-</table>
+</table> */}
 
 			
 Adicionalmente, en función de su objetivo, las cookies pueden clasificarse de la siguiente forma:

@@ -2,8 +2,15 @@
     width: 90%;
     max-width: 1200px;
     margin:auto;
+    
 }
 
+.fila{
+    display: flex;
+    gap:20px;
+    margin-bottom:50px;
+}
+/* 
 .tratamiento {
     width: 100%;
     display: flex;
@@ -65,4 +72,4 @@
 
 @media screen and (min-width:980px){
     
-}
+} */

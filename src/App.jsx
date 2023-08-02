@@ -26,7 +26,6 @@ export default function App() {
 
 	const [lang, setLang] = useState('espanol')
 	const [isAdmin, setIsAdmin]= useState(false)
-	console.log(isAdmin)
 
 	function cambiarIdioma(e){
 		setLang(e.target.value)
@@ -44,8 +43,8 @@ export default function App() {
 
 	return(
 		<>
-		<IdiomaContext.Provider value={{idioma, isAdmin, setIsAdmin}}>
-			<Navbar cambiarIdioma={cambiarIdioma}/>
+		<IdiomaContext.Provider value={{idioma, isAdmin, setIsAdmin, cambiarIdioma}}>
+			{/* <Navbar cambiarIdioma={cambiarIdioma}/> */}
 			<Routes>
 				<Route path='/' element={<MainPage/>}/>
 				<Route path='/blog' element={<Blog/>}/>

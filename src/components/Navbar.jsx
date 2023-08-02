@@ -3,17 +3,38 @@ import {Link} from 'react-router-dom'
 import raul_logo from '/src/assets/imgs/raul_logo.png'
 import '../css/navbar.css'
 import { IdiomaContext } from '../App'
+import textoEspanol from '../assets/dataEspanol'
+import textoAleman from '../assets/dataAleman'
+import textoIngles from '../assets/dataIngles'
 
 
 
 
 function Navbar(props){
-    const {idioma} = useContext(IdiomaContext)
+    const {idioma, cambiarIdioma} = useContext(IdiomaContext)
     const [menu, setMenu] = useState(false)
+    const [lang, setLang] = useState('espanol')
+
 
     function toggleMenu(){
         setMenu(prev => !prev)
     }
+
+  
+
+    
+	// function cambiarIdioma(e){
+	// 	setLang(e.target.value)
+	// }
+
+	// if (lang === 'ingles'){
+	// 	idioma = textoIngles
+	// }else if (lang === 'aleman'){
+	// 	idioma = textoAleman
+	// }else{
+	// 	idioma = textoEspanol
+	// }
+	
 
 
     return(
@@ -27,7 +48,7 @@ function Navbar(props){
                     <div>
                         <button className='bandera alemania'
                             value='aleman'
-                            // onClick={(e)=>props.cambiarIdioma(e)}
+                            // onClick={(e)=>cambiarIdioma(e)}
                             >
                         </button>
                     </div>
@@ -35,7 +56,7 @@ function Navbar(props){
                     <div>
                         <button className='bandera inglesa' 
                             value='ingles'
-                            // onClick={(e)=>props.cambiarIdioma(e)}
+                            // onClick={(e)=>cambiarIdioma(e)}
                             >
                         </button>
                     </div>
@@ -43,7 +64,7 @@ function Navbar(props){
                     <div>
                         <button className='bandera espana'
                             value='español'
-                            // onClick={(e)=>props.cambiarIdioma(e)}
+                            // onClick={(e)=>cambiarIdioma(e)}
                             >
                         </button>
                     </div>

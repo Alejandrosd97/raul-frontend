@@ -1,25 +1,31 @@
 import React from 'react'
 import "../css/politicaPrivacidad.css"
+import Navbar from './Navbar'
+
 
 
 export default function () {
   return (
+    <>
+    <Navbar/>
+    
     <div className='contenedor'>
+        
         <h1>POLÍTICA DE PRIVACIDAD</h1>
         <h3>1. INFORMACIÓN AL USUARIO</h3>
         
         <p>
-            TU EMPRESA, S.L., como Responsable del Tratamiento, le informa que, según lo dispuesto en el Reglamento (UE) 2016/679, de 27 de abril, (RGPD) y en la L.O. 3/2018, de 5 de diciembre, de protección de datos y garantía de los derechos digitales (LOPDGDD), trataremos su datos tal y como reflejamos en la presente Política de Privacidad.
+            Raulfisio, como Responsable del Tratamiento, le informa que, según lo dispuesto en el Reglamento (UE) 2016/679, de 27 de abril, (RGPD) y en la L.O. 3/2018, de 5 de diciembre, de protección de datos y garantía de los derechos digitales (LOPDGDD), trataremos su datos tal y como reflejamos en la presente Política de Privacidad.
             En esta Política de Privacidad describimos cómo recogemos sus datos personales y por qué los recogemos, qué hacemos con ellos, con quién los compartimos, cómo los protegemos y sus opciones en cuanto al tratamiento de sus datos personales. Esta Política se aplica al tratamiento de sus datos personales recogidos por la empresa para la prestación de sus servicios. Si acepta las medidas de esta Política, acepta que tratemos sus datos personales como se define en esta Política.</p>
     
         <h3>2. CONTACTO</h3>
 
         <ul className='pd-0'>
-            <li className='mb-2'><span className='fw-bold'>Denominación social:</span>TU EMPRESA, S.L.</li> 
-            <li className='mb-2'><span className='fw-bold'> Nombre comercial:</span>Clínica Raulfisio</li>  
-            <li className='mb-2'><span className='fw-bold'> CIF:</span>NÚMERO CIF</li>  
-            <li className='mb-2'><span className='fw-bold'> Domicilio:</span>C/ Clot de la Mota 27 bajo, Playa de Gandia</li>
-            <li className='mb-2'><span className='fw-bold'> e-mail:</span>clinicaraulfisio@gmail.com</li>
+            <li className='mb-2'><span className='fw-bold'>Denominación social: </span>Raulfisio</li> 
+            <li className='mb-2'><span className='fw-bold'> Nombre comercial: </span>Clínica Raulfisio</li>  
+            <li className='mb-2'><span className='fw-bold'> CIF: </span>20023125-S</li>  
+            <li className='mb-2'><span className='fw-bold'> Domicilio: </span>C/ Clot de la Mota 27 bajo, Playa de Gandia</li>
+            <li className='mb-2'><span className='fw-bold'> e-mail: </span>clinicaraulfisio@gmail.com</li>
         </ul>
 
         <h3>3. PRINCIPIOS CLAVE</h3>
@@ -27,14 +33,14 @@ export default function () {
         <p>Siempre hemos estado comprometidos con prestar nuestros servicios con el más alto grado de calidad, lo que incluye tratar sus datos con seguridad y transparencia. Nuestros principios son:</p>
 
         <ul>
-            <li className='mb-2'> <span className='fw-bold'>Legalidad:</span>  Solo recopilaremos sus Datos personales para fines específicos, explícitos y legítimos.</li>
+            <li className='mb-2'> <span className='fw-bold'>Legalidad: </span>Solo recopilaremos sus Datos personales para fines específicos, explícitos y legítimos.</li>
             <li className='mb-2'><span className='fw-bold'>Minimización de datos:</span> Limitamos la recogida de datos de carácter personal a lo que es estrictamente relevante y necesario para los fines para los que se han recopilado.</li>
             <li className='mb-2'><span className='fw-bold'>Limitación de la Finalidad:</span> Solo recogeremos sus datos personales para los fines declarados y solo según sus deseos.</li>
             <li className='mb-2'><span className='fw-bold'>Precisión:</span> Mantendremos sus datos personales exactos y actualizados.</li>
             <li className='mb-2'><span className='fw-bold'>Seguridad de los Datos:</span> Aplicamos las medidas técnicas y organizativas adecuadas y proporcionales a los riesgos para garantizar que sus datos no sufran daños, tales como divulgación o acceso no autorizado, la destrucción accidental o ilícita o su pérdida accidental o alteración y cualquier otra forma de tratamiento ilícito.</li>
             <li className='mb-2'><span className='fw-bold'>Acceso y Rectificación:</span> Disponemos de medios para que acceda o rectifique sus datos cuando lo considere oportuno.</li>
             <li className='mb-2'><span className='fw-bold'>Conservación:</span> Conservamos sus datos personales de manera legal y apropiada y solo mientras es necesario para los fines para los que se han recopilado.</li>
-            <li className='mb-2'><span className='fw-bold'>Las transferencias internacionales:</span> cuando se dé el caso de que sus datos vayan a ser transferidos fuera de la UE/EEE se protegerán adecuadamente.</li>
+            <li className='mb-2'><span className='fw-bold'>Las transferencias internacionales:</span> Cuando se dé el caso de que sus datos vayan a ser transferidos fuera de la UE/EEE se protegerán adecuadamente.</li>
             <li className='mb-2'><span className='fw-bold'>Terceros:</span> El acceso y transferencia de datos personales a terceros se llevan a cabo de acuerdo con las leyes y reglamentos aplicables y con las garantías contractuales adecuadas.</li>
             <li className='mb-2'><span className='fw-bold'>Marketing Directo y cookies:</span> Cumplimos con la legislación aplicable en materia de publicidad y cookies.</li>
         </ul>
@@ -65,7 +71,7 @@ export default function () {
 
 
         <h3>6. COMUNICACIÓN DE DATOS PERSONALES</h3>
-        <p>Los datos pueden ser comunicados a empresas relacionadas con TU EMPRESA, S.L. para la prestación de los diversos servicios en calidad de Encargados del Tratamiento. La empresa no realizará ninguna cesión, salvo por obligación legal.</p>
+        <p>Los datos pueden ser comunicados a empresas relacionadas con Raulfisio. para la prestación de los diversos servicios en calidad de Encargados del Tratamiento. La empresa no realizará ninguna cesión, salvo por obligación legal.</p>
 
 
         <h3>7. SUS DERECHOS</h3>
@@ -80,14 +86,14 @@ export default function () {
         </ul>
 
         <p>Si ha otorgado su consentimiento para alguna finalidad concreta, tiene derecho a retirar el consentimiento otorgado en cualquier momento, sin que ello afecte a la licitud del tratamiento basado en el consentimiento previo a su retirada rrhh</p>
-        <p>Puede ejercer estos derechos enviando comunicación, motivada y acreditada, a tuemail@tudominio .com</p>
+        <p>Puede ejercer estos derechos enviando comunicación, motivada y acreditada, a clinicaraulfisio@gmail.com</p>
         <p>También tiene derecho a presentar una reclamación ante la Autoridad de control competente (www.aepd.es) si considera que el tratamiento no se ajusta a la normativa vigente.</p>
 
         <h3>8. INFORMACIÓN LEGAL</h3>
         <p>Los requisitos de esta Política complementan, y no reemplazan, cualquier otro requisito existente bajo la ley de protección de datos aplicable, que será la que prevalezca en cualquier caso.</p>
         <p>Esta Política está sujeta a revisiones periódicas y la empresa puede modificarla en cualquier momento. Cuando esto ocurra, le avisaremos de cualquier cambio y le pediremos que vuelva a leer la versión más reciente de nuestra Política y que confirme su aceptación.</p>
 
-
     </div>
+    </>
   )
 }
