@@ -6,6 +6,7 @@ import "../css//blog.css"
 import Post from './Post'
 import Pagination from './Pagination'
 import { getAllPosts } from '../servicios/post'
+import Navbar from './Navbar'
 
 export default function Blog() {
   const [posts, setPosts] = useState([])
@@ -51,6 +52,7 @@ let postsFiltrados = postsAll.map((post)=><Post key={post.id} data={post}/>)
   
   return (
     <div>
+      <Navbar/>
       <h1>NUESTRO BLOG</h1>
         <img className='header-img' src={fotoIndia} alt="" />
         <h2 className='posts-h2'>ÚLTIMAS PUBLICACIONES</h2>

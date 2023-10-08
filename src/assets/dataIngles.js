@@ -8,7 +8,7 @@ const textoIngles = [
     }
 },
 {clinicas:[{
-    clinicaGandiaDireccion : 'Visit our center in Carrer de la mota 27, Playa de Gandía',
+    clinicaGandiaDireccion : 'In our clinic in Denia you will find a friendly and professional environment, where you will be attended by a team of physiotherapists passionate about what they do',
     clinicaGandiaHorario : 'Opening hours:',
     clinicaGandiaTardes : 'Monday, Wednesday and Friday',
     clinicaGandiaMananas : 'Tuesday and Thursday',
@@ -16,7 +16,7 @@ const textoIngles = [
     clinicaGandiaTelefono: 'Telephone number:'
     },
     {
-        clinicaDeniaDireccion : 'Visit us in denia',
+        clinicaDeniaDireccion : 'Our physiotherapy clinic in Gandia is a welcoming and modern space where you will find a team of physiotherapists highly trained and committed to your well-being',
         clinicaDeniaMananas : 'Monday, Wednesday and Friday',
        
     }]
@@ -30,6 +30,7 @@ const textoIngles = [
     }
 },
 {tratamientos: [
+    {texto : 'At RaulFisio, we offer a wide range of physiotherapy services to address your individual needs. Our services include:'},
     {titulo : 'Terapia manual ingles',
     descripcion : `La terapia manual consiste en la aplicación de técnicas específicas de fisioterapia
         con el objetivo de mejorar las patologías de origen neuro-musculo-esquelético. Tiene como objetivo el
@@ -57,11 +58,15 @@ const textoIngles = [
     }
 },
 {
-    fisios : {
+    fisios : [
+        {
+            texto : 'Our highly qualified team customises each treatment to meet your unique needs.We are your allies on your path to a life without pain and with optimal health. Learn more about us and how we can make a difference in your health'
+        },
+        {
         raul :'fisioterapeuta raul ingles',
         sara : 'fisioterapeuta sara ingles',
         maria : 'fisioestetica maria ingles'
-    }
+    }]
     },
     {
     hero : {

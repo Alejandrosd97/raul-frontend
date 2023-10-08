@@ -3,6 +3,9 @@
     max-width: 850px;
     margin:auto;
 }
+.post-contenido{
+    line-height:30px;
+}
 
 
 /* PREVIO Y POST */

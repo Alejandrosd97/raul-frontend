@@ -39,10 +39,11 @@ export default function MainPage() {
       <Gandia texto={texto}/>
       <Denia texto={texto}/>
       <Tratamientos/>
-      {/* <Nosotros/> */}
+      <Nosotros/>
       <Mapas/>
+	  <Colaboraciones/>
 	  <Contact/>
-	  {/* <Colaboraciones/> */}
+	  
 	  {/* <Cookies/> */}
     </div>
   )

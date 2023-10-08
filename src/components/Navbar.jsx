@@ -48,7 +48,7 @@ function Navbar(props){
                     <div>
                         <button className='bandera alemania'
                             value='aleman'
-                            // onClick={(e)=>cambiarIdioma(e)}
+                            onClick={(e)=>cambiarIdioma(e)}
                             >
                         </button>
                     </div>
@@ -56,7 +56,7 @@ function Navbar(props){
                     <div>
                         <button className='bandera inglesa' 
                             value='ingles'
-                            // onClick={(e)=>cambiarIdioma(e)}
+                            onClick={(e)=>cambiarIdioma(e)}
                             >
                         </button>
                     </div>
@@ -64,7 +64,7 @@ function Navbar(props){
                     <div>
                         <button className='bandera espana'
                             value='español'
-                            // onClick={(e)=>cambiarIdioma(e)}
+                            onClick={(e)=>cambiarIdioma(e)}
                             >
                         </button>
                     </div>
@@ -80,15 +80,15 @@ function Navbar(props){
 
                 
                 <ul id='navbar-ul' className={menu ? 'active': ''}>
-                    {/* <Link className='nav-blog' to='/blog'>
+                    <Link className='nav-blog' to='/blog'>
                         <li onClick={window.innerWidth < 980 ? toggleMenu : null}>Blog</li>
                     </Link>
-                    <Link className='nav-blog' to='/pacientes'>
+                    {/* <Link className='nav-blog' to='/pacientes'>
                         <li onClick={window.innerWidth < 980 ? toggleMenu : null}>{idioma[0].navbar.pacientes}</li>
                     </Link> */}
                     <li onClick={window.innerWidth < 980 ? toggleMenu : null}><a href='/#clinicas'>{idioma[0].navbar.clinicas}</a></li>
                     <li onClick={window.innerWidth < 980 ? toggleMenu : null}><a href='/#tratamientos'>{idioma[0].navbar.tratamientos}</a></li>
-                    {/* <li onClick={window.innerWidth < 980 ? toggleMenu : null}><a href='/#sobre-nosotros'>{idioma[0].navbar.sobreNosotros}</a></li> */}
+                    <li onClick={window.innerWidth < 980 ? toggleMenu : null}><a href='/#sobre-nosotros'>{idioma[0].navbar.sobreNosotros}</a></li>
                     <li onClick={window.innerWidth < 980 ? toggleMenu : null}><a href='/#mapa'>{idioma[0].navbar.comoLlegar}</a></li>
                 </ul>
             </div>

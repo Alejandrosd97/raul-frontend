@@ -12,11 +12,12 @@ function Nosotros(){
     return(
         <section id='sobre-nosotros'>
             <h2>{idioma[2].titulos.sobreNosotros}</h2>
+            <p className='textoNosotros'>
+               {idioma[5].fisios[0].texto} 
+            </p>
             <div className='nosotros'>
                 
                 <Fisioterapeuta descripcion={idioma[5].fisios.raul} foto={fotoRaul}/>
-                <Fisioterapeuta descripcion={idioma[5].fisios.sara} foto={fotoRaul}/>
-                <Fisioterapeuta descripcion={idioma[5].fisios.maria} foto={fotoRaul}/>
             
             </div>
            

@@ -8,6 +8,9 @@ import { getAllComments } from '../servicios/allComments'
 import Comment from './Comment'
 import Modal from './Modal' 
 import { IdiomaContext } from '../App'
+import Navbar from './Navbar'
+import reactStringReplace from 'react-string-replace'
+
 
 
 export default function BlogDetail(props) {
@@ -21,6 +24,7 @@ export default function BlogDetail(props) {
   const [previousPostLink, setPreviousPostLink]= useState(false)
   const [nextPostLink, setNextPostLink]= useState(false)
   const [prevNextPost, setPrevNextPost] = useState([])
+
   const navigate = useNavigate()
 
   const token = JSON.parse(localStorage.getItem('token'))
@@ -30,6 +34,8 @@ export default function BlogDetail(props) {
       'Authorization': `Bearer ${token}`
     }
   }
+
+  
 
 
   useEffect(() => {
@@ -91,6 +97,8 @@ export default function BlogDetail(props) {
   return (
     <>
 
+  <Navbar/>
+
     {/* post anterior */}
     { prevNextPost[0] && <div className='post-previo'
       onMouseEnter={()=>setPreviousPostLink(true)}
@@ -133,7 +141,7 @@ export default function BlogDetail(props) {
 
         <div className="links-mobile">
         {prevNextPost[0] && <a href={`http://127.0.0.1:5173/blog/post/${prevNextPost[0].id}`}><button>{prevNextPost[0].title}</button></a>}  
-        {prevNextPost[1] && <a href={`http://127.0.0.1:5173/blog/post/${prevNextPost[1].id}`}><button>{prevNextPost[0].title}</button></a>}  
+        {prevNextPost[1] && <a href={`http://127.0.0.1:5173/blog/post/${prevNextPost[1].id}`}><button>{prevNextPost[1].title}</button></a>}  
         </div>
 
         {permission === true
@@ -145,12 +153,9 @@ export default function BlogDetail(props) {
         </div>
         : null
         }
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui commodi nulla, quasi repudiandae odit ad? Accusantium similique vitae non repellendus, cupiditate deserunt. Nobis doloribus debitis culpa dicta repellendus placeat nihil.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui commodi nulla, quasi repudiandae odit ad? Accusantium similique vitae non repellendus, cupiditate deserunt. Nobis doloribus debitis culpa dicta repellendus placeat nihil Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis animi reiciendis perspiciatis natus harum culpa atque sint, quisquam mollitia modi possimus ex! Pariatur labore, aut aliquam numquam ratione dolorum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius magni, quasi omnis atque nulla beatae vel ex hic nisi accusantium, doloribus numquam nostrum, odio ipsam vitae consectetur quae sint iure. </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui commodi nulla, quasi repudiandae odit ad? Accusantium similique vitae non repellendus, cupiditate deserunt. Nobis doloribus debitis culpa dicta repellendus placeat nihil.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui commodi nulla, quasi repudiandae odit ad? Accusantium similique vitae non repellendus, cupiditate deserunt. Nobis doloribus debitis culpa dicta repellendus placeat nihil.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui commodi nulla, quasi repudiandae odit ad? Accusantium similique vitae non repellendus, cupiditate deserunt. Nobis doloribus debitis culpa dicta repellendus placeat nihil Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis animi reiciendis perspiciatis natus harum culpa atque sint, quisquam mollitia modi possimus ex! Pariatur labore, aut aliquam numquam ratione dolorum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius magni, quasi omnis atque nulla beatae vel ex hic nisi accusantium, doloribus numquam nostrum, odio ipsam vitae consectetur quae sint iure. </p>
-        
+        <p className='post-contenido'>{reactStringReplace(post.content, '\n', (match, i) => (
+            <br/>))}
+            </p>
         
         <div className='comentarios'>
 

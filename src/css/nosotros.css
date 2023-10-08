@@ -39,6 +39,15 @@
     object-position:50% 10%
 }
 
+.textoNosotros{
+    width: 90%;
+    max-width: 650px;
+    margin:auto;
+    margin-bottom:30px;
+    font-weight: bold;
+    text-align: center;
+}
+
 @media screen and (min-width:530px) and (max-width:650px){
     .fotoFisio {
         height: 500px;
@@ -93,4 +102,10 @@
         object-position: 50% 30%;
     }
 
+}
+
+@media screen and (min-width:600px){
+    .textoNosotros {
+        font-size:20px
+        }
 }

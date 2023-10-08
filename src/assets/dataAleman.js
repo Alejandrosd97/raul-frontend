@@ -8,7 +8,7 @@ const textoAleman = [
     }
     },
     {clinicas:[{
-        clinicaGandiaDireccion : 'Besuchen Sie unsere Praxis von Gandía  in der Straße Clot de la Mota 27  Erdgeschoss',
+        clinicaGandiaDireccion : 'Unsere Physiotherapie-Klinik in Gandia ist ein gemütlicher und moderner Raum, wo Sie ein Team von hochqualifizierten Physiotherapeuten finden und sich für Ihr Wohlbefinden engagieren',
         clinicaGandiaHorario : 'Öffnungszeit:',
         clinicaGandiaTardes : 'Montag, Mittwoch und Freitag',
         clinicaGandiaMananas : 'Dienstag und Donnerstag',
@@ -16,7 +16,7 @@ const textoAleman = [
         clinicaGandiaTelefono: 'Telefonnummer:'
     },
     {
-        clinicaDeniaDireccion : 'Besuchen Sie uns in unserer Praxis am Strand von Denia, in Bovetes de Mar.',
+        clinicaDeniaDireccion : 'In unserer Klinik in Denia finden Sie eine freundliche und professionelle Umgebung, wo Sie von einem Team von Physiotherapeuten leidenschaftlich betreut werden, was sie tun',
         clinicaDeniaMananas : 'Montag, Mittwoch und Freitag',
        
     }]
@@ -31,15 +31,13 @@ const textoAleman = [
     }
     },
     {tratamientos : [
-        {titulo : 'Terapia manual',
-        descripcion : `manualtherapie`},
+        {texto : 'Bei RaulFisio, bieten wir eine breite Palette von physiotherapeutischen Dienstleistungen, um Ihre individuellen Bedürfnisse zu adressieren. Unsere Dienstleistungen umfassen:'},
+        {titulo : 'Manuelle Therapie',
+        descripcion : `Manuelle Therapie ist eine Behandlungsform, bei der Physiotherapeuten ihre Hände benutzen, um Muskel-, Gelenk- und Weichteilprobleme zu beurteilen und zu behandeln. Diese Technik kann therapeutische Massagen, Stretching, Gelenkmobilisierungen und myofasziale Freisetzungstechniken umfassen. Manuelle Therapie wird verwendet, um Schmerzen zu lindern, die Beweglichkeit zu verbessern und die normale Funktion des Körpers wiederherzustellen`},
        {titulo: 'Akpuntur',
-       descripcion : `La acupuntura es una técnica invasiva utilizada principalmente para eliminar puntos 
-            dolorosos musculares generados por sobrecargas musculares, estrés, problemas posturales etc.
-            Se introducen finas agujas en puntos específicos del cuerpo generando efectos neurobiológicos que 
-            ayudan a disminuir el dolor`} ,
-        {titulo:'Osteopatíe',
-        descripcion: `tratamiento de ostepatia`},
+       descripcion : `Akupunktur ist eine Therapie, die auf der traditionellen chinesischen Medizin basiert, bei der feine Nadeln an bestimmten Stellen des Körpers eingeführt werden, um die Lebensenergie (Qi) zu stimulieren und die Selbstheilung zu fördern. Es wird verwendet, um eine Vielzahl von Bedingungen wie chronische Schmerzen, Stress, Angst, Schlafstörungen und Muskel-Skelett-Erkrankungen zu behandeln. Akupunktur kann helfen, Schmerzen zu lindern und das allgemeine Wohlbefinden zu verbessern`} ,
+        {titulo:'Osteopathie',
+        descripcion: `Die Osteopathie ist eine therapeutische Disziplin, die sich auf den Bewegungsapparat und die Beziehung zwischen Körperstruktur und Funktion konzentriert. Osteopathen verwenden sanfte manuelle Techniken, um Probleme wie Rückenschmerzen, Gelenkerkrankungen und Mobilitätsprobleme zu bewerten und zu behandeln. Ziel ist es, das Gleichgewicht und die Funktion des Körpers wiederherzustellen, Schmerzen zu lindern und die allgemeine Gesundheit zu verbessern`},
         {titulo:'Fisioestética',
         descripcion : 'tratamientos de fisioestetica'}
     ]
@@ -56,11 +54,15 @@ const textoAleman = [
     }
     },
     {
-    fisios : {
+    fisios : [
+        {
+           texto: 'Unser hochqualifiziertes Team passt jede Behandlung an Ihre individuellen Bedürfnisse an. Wir sind deine Verbündeten auf deinem Weg zu einem schmerzfreien und gesunden Leben. Erfahren Sie mehr über uns und wie wir Ihre Gesundheit verbessern können'     
+        },
+        {
         raul :'fisioterapeuta raul deutsch',
         sara : 'fisioterapeuta sara deutsch ',
         maria : 'fisioestetica maria deutsch'
-    }
+    }]
     },
     {
     hero : {

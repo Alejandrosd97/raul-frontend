@@ -18,6 +18,7 @@ import textoEspanol from './assets/dataEspanol'
 import textoAleman from './assets/dataAleman'
 import textoIngles from './assets/dataIngles'
 import PoliticaCookies from './components/PoliticaCookies'
+import raul_logo from './assets/imgs/raul_logo.png'
 
 
 export const IdiomaContext = createContext()
@@ -43,8 +44,10 @@ export default function App() {
 
 	return(
 		<>
+		
+		{/* esto iria debajo del idiomacontext <Navbar cambiarIdioma={cambiarIdioma}/> */}
 		<IdiomaContext.Provider value={{idioma, isAdmin, setIsAdmin, cambiarIdioma}}>
-			{/* <Navbar cambiarIdioma={cambiarIdioma}/> */}
+			
 			<Routes>
 				<Route path='/' element={<MainPage/>}/>
 				<Route path='/blog' element={<Blog/>}/>

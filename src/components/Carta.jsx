@@ -9,7 +9,7 @@ import 'aos/dist/aos.css'
 export default function Carta(props) {
 
    useEffect(()=>{
-        AOS.init({duration:2000})
+        AOS.init({duration:1000})
     },[]) 
 
   return (
