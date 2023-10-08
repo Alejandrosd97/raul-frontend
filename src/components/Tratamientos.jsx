@@ -1,7 +1,7 @@
 import {React, useContext} from 'react'
 import '../css/tratamientoNuevo.css'
 import masaje from '/src/assets/imgs/masaje.jpg'
-import fisioestetica from '/src/assets/imgs/fisioestetica.jpg'
+import ejercicio from '/src/assets/imgs/ejercicio.jpg'
 import osteopatia from '/src/assets/imgs/osteopatia.jpg'
 import acupuntura from '/src/assets/imgs/acupuntura.jpg'
 
@@ -34,7 +34,7 @@ function Tratamientos(){
 
                 <div className="fila">
                     <Carta fade={'fade-right'} imagen={osteopatia} texto={idioma[3].tratamientos[3]}/>
-                <Carta fade={'fade-left'} imagen={fisioestetica} texto={idioma[3].tratamientos[4]}/>
+                <Carta fade={'fade-left'} imagen={ejercicio} texto={idioma[3].tratamientos[4]}/>
                 </div>
                 
                 

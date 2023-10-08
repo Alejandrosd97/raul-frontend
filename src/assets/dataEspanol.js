@@ -37,8 +37,8 @@ const textoEspanol = [
        descripcion : `La acupuntura es una terapia basada en la medicina tradicional china que implica la inserción de agujas finas en puntos específicos del cuerpo para estimular la energía vital (Qi) y promover la autocuración. Se utiliza para tratar una variedad de condiciones, como dolor crónico, estrés, ansiedad, problemas de sueño y trastornos musculoesqueléticos. La acupuntura puede ayudar a aliviar el dolor y mejorar el bienestar general.`} ,
         {titulo:'Osteopatía',
         descripcion: `La osteopatía es una disciplina terapéutica que se enfoca en el sistema musculoesquelético y la relación entre la estructura del cuerpo y su función. Los osteópatas utilizan técnicas manuales suaves para evaluar y tratar problemas como el dolor de espalda, trastornos de las articulaciones y problemas de movilidad. El objetivo es restaurar el equilibrio y la función del cuerpo, aliviando el dolor y mejorando la salud en general.`},
-        {titulo:'Fisioestética',
-        descripcion : 'La fisioestética es una especialidad de la fisioterapia que sirve para mejorar diversas imperfecciones estéticas, ya sea las causadas por la edad o por patologías. La diferencia con la cosmética tradicional de que también tiene beneficios para la salud.'}
+        {titulo:'Ejercicio terapéutico',
+        descripcion : 'El ejercicio terapéutico es una parte fundamental de la fisioterapia, diseñado para mejorar la fuerza, la flexibilidad, la movilidad y la función del cuerpo. Personalizado según las necesidades individuales del paciente, este tipo de ejercicio se enfoca en áreas específicas afectadas por lesiones o condiciones médicas. Supervisado por profesionales de la salud, el ejercicio terapéutico ayuda a reducir el dolor, mejorar la postura y restaurar la calidad de vida de los pacientes, contribuyendo significativamente a su recuperación y bienestar'}
     ]
     },
     {
@@ -49,6 +49,8 @@ const textoEspanol = [
             email :'Email',
             asunto: 'Asunto',
             consulta: 'Consulta',
+            politica : 'He leido y acepto la ' ,
+            enlace: 'política de privacidad',
             enviar : 'Enviar'
         }
     },
@@ -66,7 +68,7 @@ const textoEspanol = [
     {
         hero : {
             clinicasRaulfisio : 'Clínicas raulfisio',
-            main : 'Visita nuestras clínicas de Gandía y Denia. La mejor atención en fisioterapia, osteopatía y fisioestética',
+            main : 'Tu Camino hacia la Salud y el Bienestar',
             consultarTratamientos : 'Consulta nuestros tratamientos'
         }
     },
@@ -75,7 +77,7 @@ const textoEspanol = [
             titulo : 'Colaboraciones',
             tenis :  'Cub de Tenis Gandia',
             volley : 'Club de VolleyBall Joan XXIII' ,
-            texto : 'En RaulFisio, estamos orgullosos de anunciar nuestra emocionante colaboración con el prestigioso Club de Tenis de Gandia. Como parte de este acuerdo, ofrecemos servicios de fisioterapia especializados durante los torneos que se celebran en las instalaciones del club. Nuestro equipo de fisioterapeutas altamente calificados estará presente en los eventos para proporcionar atención de primera clase a los atletas y participantes. Estamos comprometidos en ayudar a los jugadores de tenis a mantener su rendimiento en su mejor nivel y a manejar cualquier lesión o molestia que puedan experimentar durante el torneo. Esta colaboración representa nuestro compromiso continuo con la comunidad deportiva de Gandia y nuestra pasión por contribuir al bienestar de los atletas locales. Esperamos seguir siendo un recurso confiable para la salud y el rendimiento de los jugadores de tenis en el Club de Tenis de Gandia.'
+            texto : 'En RaulFisio, nos enorgullece anunciar nuestra colaboración con el Club de Tenis de Gandia. Ofrecemos servicios de fisioterapia especializados durante los torneos en el club, brindando atención de primer nivel a los atletas. Nuestro equipo de fisioterapeutas estará presente para mantener el rendimiento y tratar lesiones. Esto refleja nuestro compromiso con la comunidad deportiva de Gandia y nuestro interés en el bienestar de los atletas locales, siendo un recurso confiable en el Club de Tenis de Gandia.'
         }
     }
 ]

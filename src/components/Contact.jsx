@@ -33,7 +33,7 @@ export default function Form() {
             </div>
             <div className='privacidad'>
                 <input type='checkbox' required={true} id="consentimiento"></input>
-                <p>He leído y acepto <Link to={'/privacidad'}>la politica de privacidad</Link></p>
+                <p>{idioma[4].contacto.politica}<Link to={'/privacidad'}>{idioma[4].contacto.enlace}</Link></p>
             </div>
             <button type='submit' className='contact-button'>{idioma[4].contacto.enviar}</button>
         </form>

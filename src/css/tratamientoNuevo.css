@@ -7,6 +7,7 @@
 
 .fila{
     display: flex;
+    flex-direction: column;
     gap:20px;
     margin-bottom:50px;
 }
@@ -25,4 +26,10 @@
         font-size: 20px;
         text-align:center;
         }
+}
+
+@media screen and (min-width:800px){
+    .fila{
+        flex-direction: row;
+    }
 }

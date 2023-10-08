@@ -31,19 +31,14 @@ const textoIngles = [
 },
 {tratamientos: [
     {texto : 'At RaulFisio, we offer a wide range of physiotherapy services to address your individual needs. Our services include:'},
-    {titulo : 'Terapia manual ingles',
-    descripcion : `La terapia manual consiste en la aplicación de técnicas específicas de fisioterapia
-        con el objetivo de mejorar las patologías de origen neuro-musculo-esquelético. Tiene como objetivo el
-        restablecimiento del correcto tono muscular, la mejora de la movilidad y la disminución del dolor`},
-    {titulo: 'Acupuntura',
-    descripcion : `La acupuntura es una técnica invasiva utilizada principalmente para eliminar puntos 
-        dolorosos musculares generados por sobrecargas musculares, estrés, problemas posturales etc.
-        Se introducen finas agujas en puntos específicos del cuerpo generando efectos neurobiológicos que 
-        ayudan a disminuir el dolor`} ,
-    {titulo:'Osteopatí inglesa',
-    descripcion: `tratamiento de ostepatia`},
-    {titulo:'Fisioestética',
-    descripcion : 'tratamientos de fisioestetica'}
+    {titulo : 'Manual therapy',
+    descripcion : `Manual therapy is a form of treatment in which physical therapists use their hands to assess and treat muscle, joint, and soft tissue problems. This technique may include therapeutic massages, stretches, joint mobilizations, and myofascial release techniques. Manual therapy is used to reduce pain, improve mobility, and restore normal body function`},
+    {titulo: 'Acupuncture',
+    descripcion : `Acupuncture is a therapy based on traditional Chinese medicine that involves the insertion of fine needles at specific points of the body to stimulate vital energy (Qi) and promote self-healing. It is used to treat a variety of conditions, including chronic pain, stress, anxiety, sleep problems, and musculoskeletal disorders. Acupuncture may help relieve pain and improve overall well-being`} ,
+    {titulo:'Osteopathy',
+    descripcion: `Osteopathy is a therapeutic discipline that focuses on the musculoskeletal system and the relationship between body structure and function. Osteopaths use gentle manual techniques to assess and treat problems such as back pain, joint disorders, and mobility problems. The goal is to restore balance and body function, relieving pain and improving overall health`},
+    {titulo:'Therapeutic exercise',
+    descripcion : "Therapeutic exercise is a fundamental part of physiotherapy, designed to improve strength, flexibility, mobility, and body function. Tailored to the individual needs of the patient, this type of exercise focuses on specific areas affected by injuries or medical conditions. Supervised by health professionals, therapeutic exercise helps to reduce pain, improve posture and restore patients' quality of life, making a significant contribution to their recovery and well-being"}
     ]
 },
 {
@@ -54,6 +49,8 @@ const textoIngles = [
         email :'Email',
         asunto : 'Subject',
         consulta: 'Question',
+        politica : 'I have read and accept',
+        enlace : ' the privacy policy',
         enviar : 'Send'
     }
 },
@@ -71,13 +68,14 @@ const textoIngles = [
     {
     hero : {
         clinicasRaulfisio : 'raulfisio',
-        main : 'Visit our clinics in Gandía and Denia. We are specialiced in manual therapy, osteopathy and physio-aesthetics',
+        main : 'Your Path to Health and Wellbeing',
         consultarTratamientos : 'Check our treatments!'
     }
     },
     {
         colaboraciones: {
-            titulo: 'Colaborations',
+            titulo: 'Partnerships',
+            texto : "At RaulFisio, we are proud to announce our partnership with the Gandia Tennis Club. We offer specialized physiotherapy services during tournaments at the club, providing first-class care to athletes. Our team of physiotherapists will be on hand to maintain performance and treat injuries. This reflects our commitment to the Gandia sports community and our interest in the well-being of local athletes, being a trusted resource at the Gandia Tennis Club" ,
             tenis :  'Gandia Tennis Club',
             volley : 'Volleyball Club Joan XXIII'
         }

@@ -18,9 +18,9 @@ function Footer(){
                     <a  target="_blank" href="https://www.instagram.com/clinica_raulfisio/?hl=es"><img className='logo' src={instagram}/></a>
                     <a  target="_blank" href="https://es-es.facebook.com/raul.manzanoromero.9/"><img className='logo' src={facebook}/></a>
                 </div>
-                <div className='footer-contacto'>
-                    <span>Gandia: 666 33 83 08</span>
-                    <span>Denia: 674 64 39 37</span>
+                <div>
+                    <p>Gandia: 666 33 83 08 / Carrer Clot de la Mota 27 bajo</p>
+                    <p>Denia: 674 64 39 37 / Camí de les Bovetes al Mar 1</p>
                 </div>
                 <p>clinicaraulfisio@gmail.com</p>
             </div>
