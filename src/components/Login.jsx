@@ -43,7 +43,7 @@ export default function Login() {
         localStorage.setItem('token', JSON.stringify(data.token))
         setIsAdmin(data.isAdmin)
 
-        navigate(`/pacientes`)     
+        navigate(`/`)     
       }})
     .catch(e=> console.log(e))
   }

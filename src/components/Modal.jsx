@@ -13,7 +13,7 @@ export default function Modal({form, changeForm, postId}) {
       </div>
       <div className="modal-body">
         <form onSubmit={(e)=>sendComment(e, form, postId )}>
-        <label htmlFor="nombre">Nombre completo:</label>
+        <label htmlFor="nombre">Nombre:</label>
         <input 
             className='form-control'
             name='name'

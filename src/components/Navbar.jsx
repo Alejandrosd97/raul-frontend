@@ -13,28 +13,12 @@ import textoIngles from '../assets/dataIngles'
 function Navbar(props){
     const {idioma, cambiarIdioma} = useContext(IdiomaContext)
     const [menu, setMenu] = useState(false)
-    const [lang, setLang] = useState('espanol')
+    // const [lang, setLang] = useState('espanol')
 
 
     function toggleMenu(){
         setMenu(prev => !prev)
     }
-
-  
-
-    
-	// function cambiarIdioma(e){
-	// 	setLang(e.target.value)
-	// }
-
-	// if (lang === 'ingles'){
-	// 	idioma = textoIngles
-	// }else if (lang === 'aleman'){
-	// 	idioma = textoAleman
-	// }else{
-	// 	idioma = textoEspanol
-	// }
-	
 
 
     return(
@@ -80,16 +64,14 @@ function Navbar(props){
 
                 
                 <ul id='navbar-ul' className={menu ? 'active': ''}>
-                    <Link className='nav-blog' to='/blog'>
-                        <li onClick={window.innerWidth < 980 ? toggleMenu : null}>Blog</li>
-                    </Link>
-                    {/* <Link className='nav-blog' to='/pacientes'>
-                        <li onClick={window.innerWidth < 980 ? toggleMenu : null}>{idioma[0].navbar.pacientes}</li>
-                    </Link> */}
-                    <li onClick={window.innerWidth < 980 ? toggleMenu : null}><a href='/#clinicas'>{idioma[0].navbar.clinicas}</a></li>
+                    
+                    <li className='navbar-li' onClick={window.innerWidth < 980 ? toggleMenu : null}><a href='/#clinicas'>{idioma[0].navbar.clinicas}</a></li>
                     <li onClick={window.innerWidth < 980 ? toggleMenu : null}><a href='/#tratamientos'>{idioma[0].navbar.tratamientos}</a></li>
                     <li onClick={window.innerWidth < 980 ? toggleMenu : null}><a href='/#sobre-nosotros'>{idioma[0].navbar.sobreNosotros}</a></li>
                     <li onClick={window.innerWidth < 980 ? toggleMenu : null}><a href='/#mapa'>{idioma[0].navbar.comoLlegar}</a></li>
+                    <Link className='nav-blog' to='/blog'>
+                        <li onClick={window.innerWidth < 980 ? toggleMenu : null}>Blog</li>
+                    </Link>
                 </ul>
             </div>
         </nav>

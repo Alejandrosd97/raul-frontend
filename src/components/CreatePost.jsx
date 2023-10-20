@@ -17,8 +17,9 @@ export default function CreatePost() {
     
 
     const [ form , setForm ] = useState({
-        title:'', content:'' , category:'', image : ''
+        title:'', content:'' , category:'', imageUrl : ''
     })
+
 
     function changeForm(event){
         setForm(prevFormData => {
@@ -44,21 +45,26 @@ export default function CreatePost() {
     function enviarForm(e){
         e.preventDefault() 
 
-        const formData  = new FormData();
-        const fileInput =document.getElementById('file')
-        formData.append('image', fileInput.files[0])  
-        formData.append('title', form.title)
-        formData.append('content', form.content)
-        formData.append('category', form.category)
+        // const formData  = new FormData();
+        // //const fileInput =document.getElementById('file')
+        // formData.append('imageUrl', form.imageUrl)  
+        // formData.append('title', form.title)
+        // formData.append('content', form.content)
+        // formData.append('category', form.category)
+        // console.log('el objeto')
+        // console.log(formData)
+        console.log(form)
 
-            const config = {
-            method: 'POST',
-            headers: {
-                'Authorization': `Bearer ${token}`
-            },
-            body: formData
+        const config = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify(form)
+
         }
-        fetch('https://pagina-raul.vercel.app/api/post', config)
+        fetch('pagina-raul.vercel.app/api/post', config)
         .then(res=>res.json())
         .then(data=>{
             if (data.error === 'invalid token'){
@@ -78,7 +84,6 @@ export default function CreatePost() {
         {value: 'fisioterapia', label : 'Fisioterapia'},
         {value: 'deporte', label : 'Deporte'},
         {value: 'vida', label : 'Vida'}
-
     ]
 
   return (
@@ -107,13 +112,13 @@ export default function CreatePost() {
                 options = {options}
                 onChange={valueForm}/>
             
-            <label className='mt-3' htmlFor='post-foto'>Añade una foto de cabecera:</label>
+            <label className='mt-3' htmlFor='post-foto'>Url de la foto de cabecera:</label>
             <input 
                 className='form-control ' 
-                type='file' 
-                id='file'
-                name = 'image'
-                accept="image/png, image/jpeg, image/jpg"/>
+                type='text' 
+                id='url'
+                onChange={changeForm} 
+                name = 'imageUrl'/>
             
             <div className='create-post-btns  mt-3'>
                 <button type='submit'

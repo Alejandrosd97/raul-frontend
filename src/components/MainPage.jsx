@@ -9,7 +9,6 @@ import textoEspanol from '../assets/dataEspanol'
 import textoIngles from '../assets/dataIngles'
 import textoAleman from '../assets/dataAleman'
 import Contact from './Contact'
-import Cookies from './Cookies'
 import Colaboraciones from './Colaboraciones'
 import Navbar from './Navbar'
 
@@ -44,7 +43,6 @@ export default function MainPage() {
 	  <Colaboraciones/>
 	  <Contact/>
 	  
-	  {/* <Cookies/> */}
     </div>
   )
 }

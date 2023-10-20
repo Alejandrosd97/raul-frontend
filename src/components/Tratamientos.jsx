@@ -7,7 +7,6 @@ import acupuntura from '/src/assets/imgs/acupuntura.jpg'
 
 
 import Carta from './Carta'
-// import TratamientoNuevo from './TratamientoNuevo'
 import { IdiomaContext } from '../App'
 
 
@@ -23,10 +22,6 @@ function Tratamientos(){
                 {idioma[3].tratamientos[0].texto}
             </p>
             <div className='tratamientos-bloque'>
-                {/* <TratamientoNuevo imagen={masaje} texto={idioma[3].tratamientos[0]}/>
-                <TratamientoNuevo imagen={acupuntura} texto={idioma[3].tratamientos[1]}/>
-                <TratamientoNuevo imagen={osteopatia} texto={idioma[3].tratamientos[2]}/>
-                <TratamientoNuevo imagen={fisioestetica} texto={idioma[3].tratamientos[3]}/> */}
                 <div className="fila">
                     <Carta fade={'fade-right'} imagen={masaje} texto={idioma[3].tratamientos[1]}/>
                     <Carta fade={'fade-left'} imagen={acupuntura} texto={idioma[3].tratamientos[2]}/>
@@ -34,7 +29,7 @@ function Tratamientos(){
 
                 <div className="fila">
                     <Carta fade={'fade-right'} imagen={osteopatia} texto={idioma[3].tratamientos[3]}/>
-                <Carta fade={'fade-left'} imagen={ejercicio} texto={idioma[3].tratamientos[4]}/>
+                    <Carta fade={'fade-left'} imagen={ejercicio} texto={idioma[3].tratamientos[4]}/>
                 </div>
                 
                 

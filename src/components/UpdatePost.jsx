@@ -11,7 +11,7 @@ export default function UpdatePost() {
     const [post, setPost] = useState({})
     console.log(post)
     const [ form , setForm ] = useState({
-        title: post.title, content: post.content, category: post.category
+        title: post.title, content: post.content, category: post.category, imageUrl : post.image
     })
 
 
@@ -48,19 +48,20 @@ export default function UpdatePost() {
 
 
         const formData  = new FormData();
-        const fileInput = document.getElementById('file')
-        formData.append('image', fileInput.files[0])
-        formData.append('title', form.title)
-        formData.append('content', form.content)
-        formData.append('category', form.category)
+        // const fileInput = document.getElementById('file')
+        // formData.append('image', fileInput.files[0])
+        // formData.append('title', form.title)
+        // formData.append('content', form.content)
+        // formData.append('category', form.category)
         const config = {
             method: 'PUT',
             headers: {
+                'Content-Type': 'application/json',
                 'Authorization': `Bearer ${token}`
             },
-            body: formData
+            body: JSON.stringify(form)
         }
-        fetch(`https://pagina-raul.vercel.app/api/post/${postId}`, config)
+        fetch(`http://localhost:3000/api/post/${postId}`, config)
         .then(
             navigate('/blog')
         )
@@ -83,18 +84,20 @@ export default function UpdatePost() {
                 name='title' 
                 defaultValue= {post.title || ''}
                 onChange={changeForm} 
-                className="form-control" 
+                className="form-control mb-3" 
                 type="text" />
 
             <label htmlFor="contenido">Contenido:</label>
             <textarea 
-                className="form-control" 
+                className="form-control  mb-3" 
                 onChange={changeForm} 
                 defaultValue={post.content || ''}
                 name='content' 
                 id='contenido'/>
+
+            <label htmlFor="category">Categoría:</label>
             <Select
-                className='mt-3'
+                className=' mb-3'
                 name='category'
                 placeholder='Categoría'
                 options = {options}
@@ -102,14 +105,17 @@ export default function UpdatePost() {
                 onChange={valueForm}/>
                 
 
-            <label htmlFor='post-foto'>Añade una foto de cabecera:</label>
+            <label htmlFor='post-foto'>Url de la imagen:</label>
             <input 
-                className='form-control' 
-                type='file' 
-                id='file'
-                name='image'
-                accept="image/png, image/jpeg, image/jpg"/>
-            <div className='create-post-btns  mt-3'>
+                className='form-control  mb-3' 
+                type='text' 
+                defaultValue= {post.image || ''}
+                id='url'
+                name='urlImage'
+                onChange={changeForm} 
+
+                />
+            <div className='create-post-btns  mt-5'>
                 <button  
                     type='submit'
                     className='btn btn-primary'>Guardar</button>

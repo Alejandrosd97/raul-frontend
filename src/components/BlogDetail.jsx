@@ -159,9 +159,9 @@ export default function BlogDetail(props) {
         
         <div className='comentarios'>
 
-          <button type="button" className="boton-comentario mt-3" data-bs-toggle="modal" data-bs-target="#comentarioModal">
+          <button type="button" className="boton-comentario mt-3 mb-5" data-bs-toggle="modal" data-bs-target="#comentarioModal">
             ¡Déjanos un comentario!
-          </button>
+          </button> 
         </div>
         
         <Modal changeForm={changeForm} form={form} postId={postId}/>

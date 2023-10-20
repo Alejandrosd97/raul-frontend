@@ -4,8 +4,11 @@ export const borrarPost = (postId, token)=>{
     fetch(`https://pagina-raul.vercel.app/api/post/${postId}`,{
       method: 'DELETE',
       headers :{
+        'Content-Type': 'application/json',
         'Authorization': `Bearer ${token}`
       }
       })
+      .then(res=>res.json())
+      .catch((e)=>console.log(e))
     }
     }

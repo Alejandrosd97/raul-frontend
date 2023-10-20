@@ -9,15 +9,10 @@ import BlogDetail from './components/BlogDetail'
 import CreatePost from './components/CreatePost'
 import UpdatePost from './components/UpdatePost'
 import Login from './components/Login'
-import CrearUsuario from './components/CrearUsuario'
-import CrearVideo from './components/CrearVideo'
-import Programas from './components/Programas'
-import ProgrammDetail from './components/ProgrammDetail'
 import PoliticaPrivacidad from './components/PoliticaPrivacidad'
 import textoEspanol from './assets/dataEspanol'
 import textoAleman from './assets/dataAleman'
 import textoIngles from './assets/dataIngles'
-import PoliticaCookies from './components/PoliticaCookies'
 import raul_logo from './assets/imgs/raul_logo.png'
 
 
@@ -55,12 +50,7 @@ export default function App() {
 				<Route path='/blog/post/write' element={<CreatePost/>} />	
 				<Route path='/blog/post/edit/:postId' element={<UpdatePost/>} />	
 				<Route path='/login' element={<Login/>}/>
-				<Route path='/pacientes' element={<Programas/>} />
-				<Route path='/pacientes/:programmId' element={<ProgrammDetail/>} />
-				<Route path='/pacientes/subir-video' element={<CrearVideo/>} />		
-				<Route path='/user' element={<CrearUsuario/>} />	
 				<Route path='/privacidad' element={<PoliticaPrivacidad/>} />	
-				<Route path='/cookies' element={<PoliticaCookies/>} />	
 			</Routes>
 			<Footer/>
 		</IdiomaContext.Provider>
