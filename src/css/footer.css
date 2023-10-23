@@ -7,7 +7,7 @@
     background-color: hsla(209, 100%, 31%, 50%);
     bottom:0px;
     margin-top: 50px;  
-    padding: 20px 0px;
+    padding-bottom: 20px;
 }
 
 .blanco{
@@ -26,7 +26,11 @@
 
 .raul-logo{
     width: 200px;
-    
+}
+
+.logo-container{
+    background-color:white;
+    padding-bottom: 20px;
 }
 
 .redes-sociales{

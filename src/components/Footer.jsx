@@ -13,7 +13,9 @@ function Footer(){
     return(
         <footer>
             <div className='my-footer'>
+            <div className="logo-container">
                 <img className='raul-logo' src={raulFisioLogo}/>
+            </div>
                 <div className='redes-sociales'>
                     <div className="blanco">
                         <a  target="_blank" href="https://www.instagram.com/clinica_raulfisio/?hl=es"><img className='logo' src={instagram}/></a>

@@ -16,9 +16,13 @@ export default function Colaboraciones() {
     <h2>{idioma[7].colaboraciones.titulo}</h2>
     <div className='contenedor-colab'>
             <div className='colaboracion'>
+              <div class='foto-container'>
                 <img src={logo_tenis}></img>
-            
-            <div class='texto-colaboracion'><p>{idioma[7].colaboraciones.texto}</p></div>
+              </div>
+      
+              <div class='texto-colaboracion'>
+                <p>{idioma[7].colaboraciones.texto}</p>
+              </div>
            
         </div>
         </div>
