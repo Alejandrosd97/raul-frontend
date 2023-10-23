@@ -1,6 +1,6 @@
 import {React, useContext} from 'react'
 import '../css/colaboraciones.css'
-import logo_tenis from '/src/assets/imgs/logo_tenis.png'
+import logo_tenis from '/src/assets/imgs/tenisnuevo-rem.png'
 
 import { IdiomaContext } from '../App'
 
@@ -18,7 +18,7 @@ export default function Colaboraciones() {
             <div className='colaboracion'>
                 <img src={logo_tenis}></img>
             
-            <div><p>{idioma[7].colaboraciones.texto}</p></div>
+            <div class='texto-colaboracion'><p>{idioma[7].colaboraciones.texto}</p></div>
            
         </div>
         </div>

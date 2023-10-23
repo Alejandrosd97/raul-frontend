@@ -4,8 +4,20 @@
     min-height: 100px;
     text-align: center;
     position: sticky;
+    background-color: hsla(209, 100%, 31%, 50%);
     bottom:0px;
     margin-top: 50px;  
+    padding: 20px 0px;
+}
+
+.blanco{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo{
@@ -21,14 +33,22 @@
     display:flex;
     gap: 20px;
     justify-content: center;
-    margin-top:10px
+    margin:10px 0px;
 }
 
 .footer-contacto {
     font-size:0.7rem;
     justify-content:center;
+    color:white;
     display:flex;
     gap:1em;
     margin-top:1em;
+}
 
+.my-footer p{
+    color: white;
+}
+
+.my-footer p{
+    margin-bottom: 0px;
 }
