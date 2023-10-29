@@ -2,6 +2,7 @@ import {React, useState, useEffect} from 'react'
 import '../css/createPost.css'
 import {useNavigate} from 'react-router-dom'
 import Select from 'react-select'
+import Navbar from './Navbar'
 
 
 export default function CreatePost() {
@@ -17,7 +18,7 @@ export default function CreatePost() {
     
 
     const [ form , setForm ] = useState({
-        title:'', content:'' , category:'', imageUrl : ''
+        title:'', content:'' , category:'', imageUrl : 'https://ik.imagekit.io/tycsvln58/raul_logo.png?updatedAt=1698695402308'
     })
 
 
@@ -87,6 +88,8 @@ export default function CreatePost() {
     ]
 
   return (
+    <>
+    <Navbar/>
     <div className='post-contenedor'>
         <form onSubmit={enviarForm}>
             <label htmlFor="titulo">Título del post:</label>
@@ -116,6 +119,7 @@ export default function CreatePost() {
             <input 
                 className='form-control ' 
                 type='text' 
+                value='https://ik.imagekit.io/tycsvln58/raul_logo.png?updatedAt=1698695402308'
                 id='url'
                 onChange={changeForm} 
                 name = 'imageUrl'/>
@@ -127,5 +131,6 @@ export default function CreatePost() {
             </div>
         </form>
     </div>
+    </>
   )
 }

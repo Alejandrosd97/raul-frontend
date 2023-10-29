@@ -2,6 +2,7 @@ import {React, useState, useEffect} from 'react'
 import '../css/createPost.css'
 import {useNavigate, useParams} from 'react-router-dom'
 import Select from 'react-select'
+import Navbar from './Navbar'
 
 
 export default function UpdatePost() {
@@ -76,6 +77,9 @@ export default function UpdatePost() {
     ]
 
   return (
+    <>
+    <Navbar/>
+    
     <div className='post-contenedor'>
         <form onSubmit={enviarForm}>
             <label htmlFor="titulo">Título del post:</label>
@@ -122,5 +126,6 @@ export default function UpdatePost() {
             </div> 
         </form>
     </div>
+    </>
   )
 }

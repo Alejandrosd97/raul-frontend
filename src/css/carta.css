@@ -13,6 +13,8 @@
     height: 100%;
 }
 
+
+
 .imagen-caja img{
     width: 100%;
     height: 100%;
@@ -24,7 +26,7 @@
     border-radius: 2px;
 }
 
-.carta:hover .imagen-caja img{
+.active-img{
     opacity:0;
 }
 
@@ -42,12 +44,17 @@
     padding:15px;
 }
 
-.carta:hover .contenido{
+/* .carta:hover .contenido{
+    
+} */
+
+.activo{
     height: 100%;
     width: 100%;
-    bottom:0;
-    left:0;
+    bottom: 0;
+    left: 0;
     background-color: rgba(226, 234, 252, 0.2);
+    position:relative
 }
 
 .contenido h4{
@@ -57,10 +64,23 @@
     margin-bottom:20px;
     text-align: center;
     color: #00509d;
+    cursor: pointer
+}
+ 
+
+.boton-cerrar{
+    position:absolute;
+    right: 10px;
+    top:5px;
+    display:none
 }
 
-.carta:hover .contenido h4 {
-    text-align: left;
+.visible{
+    display:block
+}
+
+.left{
+    text-align: left !important; 
     transition: 0.5s;
 }
 
