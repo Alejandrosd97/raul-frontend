@@ -53,7 +53,7 @@ export default function CreatePost() {
         // formData.append('category', form.category)
         // console.log('el objeto')
         // console.log(formData)
-        console.log(form)
+        //console.log(form)
 
         const config = {
         method: 'POST',
@@ -64,7 +64,7 @@ export default function CreatePost() {
         body: JSON.stringify(form)
 
         }
-        fetch('pagina-raul.vercel.app/api/post', config)
+        fetch('https://pagina-raul.vercel.app/api/post', config)
         .then(res=>res.json())
         .then(data=>{
             if (data.error === 'invalid token'){
@@ -73,7 +73,7 @@ export default function CreatePost() {
                 console.log('aqui')
             }
             else{
-                console.log('aqui si')
+               // console.log('aqui si')
                 navigate('/blog')}
         })
         .catch(e=> console.log(e, e.name

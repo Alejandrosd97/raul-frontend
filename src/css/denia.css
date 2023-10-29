@@ -151,7 +151,8 @@
 
     .carrusel-denia {
         min-width: 60%;
-        height: 300px;
+        height: auto;
+        max-height: 480px;
         position: relative;
     }
 

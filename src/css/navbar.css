@@ -42,9 +42,10 @@
     top: 100px;
     left: -100%; 
     margin-top: 0px;
-    transition: 2s;
+    transition: 0.5s;
     z-index:20;
     background-color:hsl(209, 100%, 31%);
+    width: 100%;
 }
 
 .nav-blog{
@@ -57,7 +58,7 @@
     width: 100%;
 
     left:0px !important;
-    transition: ease 1s !important;
+    transition:  0.5s ;
 }
 
 
@@ -69,10 +70,11 @@
     font-size:1.4rem;
     text-align:center;
     padding:0;
+    
 }
 
 .nav li a{
-    color: #00509d;
+    color: whitesmoke;
     width: 100%;
     padding: 1em 0;
     display: inline-block
@@ -194,6 +196,7 @@ button{
         align-items: center;
         position: relative;
         top:auto;
+        width: auto;
         left:auto;
         transition:none;
         margin-bottom: 0px;
@@ -206,6 +209,11 @@ button{
     .hamburger{
         display:none
     }
+
+    .nav li a {
+        color: #00509d;
+    }
+        
 }
 
 

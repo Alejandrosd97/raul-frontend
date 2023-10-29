@@ -1,37 +1,41 @@
 .contenedor-colab{
     width: 100%;
-    padding:30px 0px;
 }
 
 .colaboracion{
-    width:90%;
+    width:100%;
     margin:auto;
     margin-bottom:20px;
     display: flex;
     flex-direction: column;
 }
 
-.texto-colaboracion{
-    width: 70%;
-    height: 360px;
+.texto-colaboracion {
     color:white;
     display:flex;
+    margin:auto;
     align-items: center;
-    padding: 0px 60px;
     background-color: hsla(209, 100%, 31%, 50%);
 }
 
 .texto-colaboracion p{
     width: 95%;
+    padding: 30px 0px;
     text-align: left;
     font-size: 1.25em;
+    width: 90%;
+    margin:auto;
 }
+
+ .texto-colaboracion,
+ .foto-container {
+     width: 100%;
+ }
 
 
 
 .foto-container{
-    width:30%;
-    height: 360px;
+    padding:20px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,6 +51,7 @@
     .colaboracion{
         align-items: center;
         margin: auto;
+        height: 400px;
         flex-direction: row;
         width: 100%;
     }
@@ -56,5 +61,24 @@
         margin:0
     }
 
+    .texto-colaboracion{
+        width: 70%;
+        height:100%;
+        padding: 0px 40px;
+    }
+
+    .texto-colaboracion p{
+        width: 100%;
+    }
+
+    .foto-container{
+        width: 30%;
+        height: 100%;
+    }
 }
 
+  @media screen and (min-width:601px) and (max-width:799px) {
+      .colaboracion {
+          height: 500px;
+      }
+  }

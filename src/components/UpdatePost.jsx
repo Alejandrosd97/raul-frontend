@@ -61,7 +61,7 @@ export default function UpdatePost() {
             },
             body: JSON.stringify(form)
         }
-        fetch(`http://localhost:3000/api/post/${postId}`, config)
+        fetch(`https://pagina-raul.vercel.app/api/post/${postId}`, config)
         .then(
             navigate('/blog')
         )

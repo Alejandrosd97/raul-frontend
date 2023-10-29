@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react'
 import '../css/carta.css'
-import masaje from '/src/assets/imgs/masaje.jpg'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -9,7 +8,7 @@ import 'aos/dist/aos.css'
 export default function Carta(props) {
 
    useEffect(()=>{
-        AOS.init({duration:1000})
+        AOS.init({duration:800})
     },[]) 
 
   return (

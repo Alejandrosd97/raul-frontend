@@ -15,14 +15,14 @@ function Hero(){
         AOS.init({duration:2000})
     },[])
 
-    return(
+    return( 
         <div className='hero' >
           <div className='descripcion-hero' data-aos='fade-right'>
             <h2 className='titulo-principal'>Clínicas Raulfisio</h2>
             <p>{idioma[6].hero.main}</p>
             <p className='negrita'>We speak English!</p>
             <p className='negrita'>Wir sprechen Deutsch!</p>
-            <a href="#tratamientos"><button className='hero-link'>{idioma[6].hero.consultarTratamientos}</button></a>
+            <a className='hero-link' href="#tratamientos">{idioma[6].hero.consultarTratamientos}</a>
           </div>
           <Parallax className='image' bgImage={clinica_iphone} strength={200}>
             

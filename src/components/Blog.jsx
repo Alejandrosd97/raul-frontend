@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect, useState } from 'react'
+import { useEffect, useState,  Suspense } from 'react'
 
 import fotoIndia from "../assets/imgs/fotoIndia.jpg"
 import "../css//blog.css"
@@ -63,10 +63,12 @@ let postsFiltrados = postsAll.map((post)=><Post key={post.id} data={post}/>)
           <li className={filtro === 'deporte'? 'filtro-active': ''} value='deporte' onClick={()=>filtrarPosts('deporte')}>Deporte</li>
           </ul>
           
+          <Suspense fallback={'Loading...'}>
         <div className='container'>
           {postsCurrentPage} 
-        
         </div>
+          </Suspense>
+
         <div className="pagination-container">
           <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate}/>
         </div>

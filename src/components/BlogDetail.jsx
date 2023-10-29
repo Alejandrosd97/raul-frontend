@@ -4,6 +4,7 @@ import fotoIndia2 from "../assets/imgs/fotoIndia2.jpg"
 import '../css/blogDetail.css'
 import { borrarPost } from '../servicios/borrarPost'
 import { getAllPosts } from '../servicios/post'
+import { getOnePost } from '../servicios/getOnePost'
 import { getAllComments } from '../servicios/allComments'
 import Comment from './Comment'
 import Modal from './Modal' 
@@ -14,13 +15,14 @@ import reactStringReplace from 'react-string-replace'
 
 
 export default function BlogDetail(props) {
-  const {isAdmin} = useContext(IdiomaContext)
+  //const {isAdmin} = useContext(IdiomaContext)
 
   const {postId} = useParams()
   const [post, setPost] = useState({})
   const [form, setForm] = useState({name:'', comment:''})
   const [comments, setComments] = useState([])
   const [permission, setPermission] =useState('false')
+  console.log(permission)
   const [previousPostLink, setPreviousPostLink]= useState(false)
   const [nextPostLink, setNextPostLink]= useState(false)
   const [prevNextPost, setPrevNextPost] = useState([])
@@ -28,6 +30,7 @@ export default function BlogDetail(props) {
   const navigate = useNavigate()
 
   const token = JSON.parse(localStorage.getItem('token'))
+
   
   const tokenOptions = { 
     headers : {
@@ -58,11 +61,11 @@ export default function BlogDetail(props) {
 
 
   useEffect(() => {
-  fetch(`https://pagina-raul.vercel.app/api/post/${postId}`, token ? tokenOptions : {}
-  )
+  getOnePost(postId, token, tokenOptions)
   .then(res => res.json())
   .then(data=> {
     setPost(data.post)
+    console.log(data)
     if (data.isAuthorized === true){
       setPermission(true)
     }

@@ -31,7 +31,7 @@ export default function Login() {
       body: JSON.stringify(form)
     }
 
-    fetch('https://pagina-raul.vercel.app/api/login', config)
+    fetch('http://localhost:3000/api/login', config)
     .then(res=> res.json())
     .then(data=> {
       if (data.error === 'username or password incorrect'){
