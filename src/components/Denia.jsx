@@ -91,11 +91,10 @@ function Denia(props){
                             <br/>
                             {idioma[1].clinicas[0].clinicaGandiaTelefono} <span className='bold'>674 64 39 37</span>
                        </p>
-                        <a
-                            className='boton-mapa' 
-                            value='denia'
-                            href="#mapa">{idioma[0].navbar.comoLlegar}</a>
-                        <a className='whats-link' target='_blank' href="https://wa.me/34675644493"><button className='whats-btn'><BsWhatsapp/>Contacta por Whatsapp</button></a>
+                       <div className='denia-btns'>
+                        <a className='boton-mapa-denia' href="#mapa">{idioma[1].clinicas[0].clinicaGandiaComoLlegar}</a>
+                        <a className='boton-whats' href="https://wa.me/34675644493"><BsWhatsapp/>Contacta por Whatsapp</a>
+                        </div>
                 </div>
                 </div>  
         

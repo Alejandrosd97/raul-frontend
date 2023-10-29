@@ -78,8 +78,11 @@ function Gandia() {
                             <br />
                             {idioma[1].clinicas[0].clinicaGandiaTelefono} <span className='bold'>666 33 83 08</span>
                         </p>
+                        <div className='gandia-btns'>
                         <a className='boton-mapa-gandia' href="#mapa">{idioma[1].clinicas[0].clinicaGandiaComoLlegar}</a>
-                        <a className='whats-link' href="https://wa.me/34675644493" target='_blank'><button className='whats-btn'><BsWhatsapp/>Contacta por Whatsapp</button></a>
+                        <a className='boton-whats' href="https://wa.me/34675644493"><BsWhatsapp/>Contacta por Whatsapp</a>
+                        </div>
+                        {/* <a className='whats-link' href="https://wa.me/34675644493" target='_blank'><button className='whats-btn'><BsWhatsapp/>Contacta por Whatsapp</button></a> */}
 
                     </div>
                 </div>

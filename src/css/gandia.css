@@ -87,20 +87,40 @@
     font-weight: 700;
 }
 
-.boton-mapa-gandia{
-    background-color: rgba(0, 82, 158, 0.8);
+.gandia-btns{
+    display:flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.boton-mapa-gandia, .boton-whats{
     padding:8px 16px;
     color:white;
+    width: fit-content;
     border-radius: 5px;
     font-weight: bold;
+}
+
+
+.boton-mapa-gandia{
+    background-color: rgba(0, 82, 158, 0.8);
+    text-align: center;
+}
+
+.boton-whats{
+   background-color: rgba(37, 211, 102, 0.8) ;
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   text-transform: uppercase;
 }
 
 .boton-mapa-gandia:hover{
     background-color: rgba(0, 82, 158, 1);
 }
 
-.whats-link {
-    display: block;
+.whats-btn:hover {
+    background-color: rgba(37, 211, 102, 1);
 }
 
 .whats-btn {
@@ -112,6 +132,7 @@
     font-weight: bold;
     margin-top: 20px;
     display: flex;
+    text-align: center;
     margin:auto;
     gap: 10px
 }
