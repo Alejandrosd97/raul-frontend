@@ -112,7 +112,7 @@ export default function BlogDetail(props) {
         <div className='tarjeta-previo'>
           <h3 className='titulo-previo'>{prevNextPost[0]? prevNextPost[0].title : ''}</h3>
           <small className='small-lateral'>{ prevNextPost[0] ? prevNextPost[0].date.split('T')[0] : ''}</small>
-          <a href={`https://pagina-raul.vercel.app/api/post/${prevNextPost[0].id}`}><button>Leer publicación</button></a>
+          <a href={`https://raulfisio-frontend-definitivo.vercel.app/blog/post/${prevNextPost[0].id}`}><button>Leer publicación</button></a>
         </div>
       </div>
     </div>}
@@ -128,7 +128,7 @@ export default function BlogDetail(props) {
         <div className='tarjeta-siguiente'>
           <h3 className='titulo-siguiente'>{prevNextPost[1].title}</h3>
           <small className='small-lateral'>{prevNextPost[1].date.split('T')[0]}</small>
-          <a href={`https://pagina-raul.vercel.app/api/post/${prevNextPost[1].id}`}><button>Leer publicación</button></a>
+          <a href={`https://raulfisio-frontend-definitivo.vercel.app/blog/post/${prevNextPost[1].id}`}><button>Leer publicación</button></a>
         </div>
       </div>
       <span className='link-siguiente'>POST SIGUIENTE</span> 
@@ -143,8 +143,8 @@ export default function BlogDetail(props) {
         <img className='foto-principal mb-5' src={post.image ? post.image : fotoIndia2} alt="" />
 
         <div className="links-mobile">
-        {prevNextPost[0] && <a href={`https://pagina-raul.vercel.app/api/post/${prevNextPost[0].id}`}><button>{prevNextPost[0].title}</button></a>}  
-        {prevNextPost[1] && <a href={`https://pagina-raul.vercel.app/api/post/${prevNextPost[1].id}`}><button>{prevNextPost[1].title}</button></a>}  
+        {prevNextPost[0] && <a href={`https://raulfisio-frontend-definitivo.vercel.app/blog/post/${prevNextPost[0].id}`}><button>{prevNextPost[0].title}</button></a>}  
+        {prevNextPost[1] && <a href={`https://raulfisio-frontend-definitivo.vercel.app/blog/post/${prevNextPost[1].id}`}><button>{prevNextPost[1].title}</button></a>}  
         </div>
 
         {permission === true
