@@ -1,22 +1,24 @@
-.contenedor{
-    width: 90%;
-    max-width: 1100px;
-    margin:auto
+.contenedor-grande {
+    width: 100%;
+    background-color: hsla(209, 100%, 31%, 5%);
 }
 
-.contenedor h3{
-    margin-top:40px;
-    font-size:20px;
+.contenedor-privacidad {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: hsla(209, 100%, 31%, 5%);
+    padding: 32px 24px;
+    background-color: white;
+    border-radius: 5px
+}
+
+.contenedor-grande h3 {
+    margin-top: 40px;
+    font-size: 20px;
     margin-bottom: 25px;
 }
 
-.contenedor h1{
-    text-align: left;
-    margin-top:30px;
-}
-
-.contenedor li{
+.contenedor-grande li {
     margin-bottom: 15px;
 }
-
-

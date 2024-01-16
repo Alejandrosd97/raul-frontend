@@ -1,0 +1,77 @@
+.whats {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgba(37, 211, 102, 1);
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 10;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14px;
+    transition: width 1s;
+}
+
+.icon {
+    font-size: 24px;
+    padding-bottom: 2px
+}
+
+.whats-links {
+    display: flex;
+    visibility: hidden;
+    gap: 12px
+}
+
+.whats-links,
+.whats a,
+.icon {
+    color: white
+}
+
+.whats:hover {
+    width: 170px;
+}
+
+.whats:hover>.whats-links {
+    visibility: visible
+}
+
+
+
+.whats:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(37, 211, 102, 1);
+    border-radius: 50px;
+    animation-name: pulsar;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    z-index: -1
+}
+
+
+
+@keyframes pulsar {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.4;
+        scale: 1.2
+    }
+
+    100% {
+        opacity: 0.6
+    }
+
+}

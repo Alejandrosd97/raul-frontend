@@ -1,32 +1,32 @@
-.denia{
-    background-color: hsla(209, 100%, 31%, 1%);
+.denia {
+    background-color: hsla(209, 100%, 31%, 3%);
 }
 
-.clinica-denia{
-    display:flex;
-    flex-direction:column-reverse;
+.clinica-denia {
+    display: flex;
+    flex-direction: column-reverse;
     width: 90%;
-    margin:auto;
+    margin: auto;
 }
 
-.carrusel-denia{
-    min-width:60%;
+.carrusel-denia {
+    min-width: 60%;
     height: 250px;
 }
 
-.carrusel-denia img{
-    object-fit:cover;
+.carrusel-denia img {
+    object-fit: cover;
     height: 100%;
     width: 100%;
-    border-radius:5px
+    border-radius: 5px
 }
 
-.clinica-denia{
+.clinica-denia {
     margin-top: 20px;
 }
 
-.descripcion-denia{
-    font-size:1.25rem
+.descripcion-denia {
+    font-size: 1.25rem
 }
 
 .smaller-denia {
@@ -51,11 +51,9 @@
 }
 
 .desc-denia {
-    text-align: center;
-    padding-bottom: 1.2em;
-    width: 90%;
-    margin:auto;
-} 
+    width: 100%;
+    margin: auto;
+}
 
 .como-llegar {
     text-align: center;
@@ -118,20 +116,8 @@
     text-align: center;
 }
 
-.boton-whats {
-    background-color: rgba(37, 211, 102, 0.8);
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    text-transform: uppercase;
-}
-
 .boton-mapa-denia:hover {
     background-color: rgba(0, 82, 158, 1);
-}
-
-.whats-btn:hover {
-    background-color: rgba(37, 211, 102, 1);
 }
 
 
@@ -152,13 +138,13 @@
 
     .desc-denia {
         text-align: left;
-        margin:0px;
-        
+        margin: 0px;
+
     }
 
     .descripcion-denia {
         font-size: 1rem;
-        width:40%
+        width: 40%
     }
 
     .descripcion-denia h3 {
@@ -176,30 +162,37 @@
 }
 
 
-@media screen and (min-width:980px){
+@media screen and (min-width:980px) {
     .clinica-denia {
         display: flex;
-        flex-direction:row;
+        gap: 40px;
+        flex-direction: row;
         margin: auto;
-        justify-content:space-between;
-        max-width:1200px;
-        height:450px;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        height: 450px;
     }
 
-    .descripcion-denia{
-        width:40%
+    .clinica-denia h3 {
+        margin-top: 0;
+        font-size: 36px;
+    }
+
+    .descripcion-denia {
+        width: 40%
     }
 
     .desc-denia {
         text-align: left;
         margin-left: 0px;
-        
+
     }
 
     .carrusel-denia {
         min-width: 60%;
         position: relative;
-        height:100%
+        height: 100%
     }
 
     .boton-mapa {

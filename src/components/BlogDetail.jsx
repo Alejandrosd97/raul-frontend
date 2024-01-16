@@ -14,7 +14,7 @@ import reactStringReplace from 'react-string-replace'
 
 
 
-export default function BlogDetail(props) {
+export default function BlogDetail() {
   //const {isAdmin} = useContext(IdiomaContext)
 
   const {postId} = useParams()
@@ -22,7 +22,6 @@ export default function BlogDetail(props) {
   const [form, setForm] = useState({name:'', comment:''})
   const [comments, setComments] = useState([])
   const [permission, setPermission] =useState('false')
-  console.log(permission)
   const [previousPostLink, setPreviousPostLink]= useState(false)
   const [nextPostLink, setNextPostLink]= useState(false)
   const [prevNextPost, setPrevNextPost] = useState([])
@@ -46,6 +45,8 @@ export default function BlogDetail(props) {
       .then(res => res.json())
       .then(data=> {
         const postActual =data.map(p => p.id).indexOf(postId)
+        console.log(data)
+        console.log(postActual)
         const prev = postActual -1
         const next = postActual +1
         if (postActual > 0 && postActual < data.length){

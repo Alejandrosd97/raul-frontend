@@ -1,0 +1,18 @@
+.contenedor-colab {
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/imgs/tenis_blue.jpg');
+    background-size: cover;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tenis-text {
+    width: 90%;
+    max-width: 700px;
+    color: white;
+    text-align: center;
+}

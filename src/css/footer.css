@@ -1,16 +1,20 @@
-
-
-.my-footer{
+.my-footer {
     min-height: 100px;
     text-align: center;
     position: sticky;
     background-color: hsla(209, 100%, 31%, 50%);
-    bottom:0px;
-    margin-top: 50px;  
-    padding-bottom: 20px;
+    bottom: 0px;
+    padding: 20px 0px;
 }
 
-.blanco{
+.my-footer ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 0
+}
+
+.blanco {
     width: 40px;
     height: 40px;
     background-color: white;
@@ -20,39 +24,39 @@
     justify-content: center;
 }
 
-.logo{
+.logo {
     width: 30px;
 }
 
-.raul-logo{
+.raul-logo {
     width: 200px;
 }
 
-.logo-container{
-    background-color:white;
+.logo-container {
+    background-color: white;
     padding-bottom: 20px;
 }
 
-.redes-sociales{
-    display:flex;
+.redes-sociales {
+    display: flex;
     gap: 20px;
     justify-content: center;
-    margin:10px 0px;
+    margin-bottom: 10px;
 }
 
 .footer-contacto {
-    font-size:0.7rem;
-    justify-content:center;
-    color:white;
-    display:flex;
-    gap:1em;
-    margin-top:1em;
+    font-size: 0.7rem;
+    justify-content: center;
+    color: white;
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
 }
 
-.my-footer p{
+.my-footer p {
     color: white;
 }
 
-.my-footer p{
+.my-footer p {
     margin-bottom: 0px;
 }
