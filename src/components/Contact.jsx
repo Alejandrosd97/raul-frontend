@@ -14,6 +14,7 @@ export default function Form() {
     const [focus3, setFocus3] = useState(false)
 
   return ( 
+    <section className='contact'>
     <div className='contenedor-contacto'>
         <h2 className='titulo'>{idioma[4].contacto.titulo}</h2>
         <p>{idioma[4].contacto.parrafo}</p> 
@@ -38,5 +39,6 @@ export default function Form() {
             <button type='submit' className='contact-button'>{idioma[4].contacto.enviar}</button>
         </form>
     </div>
+    </section>
   )
 }

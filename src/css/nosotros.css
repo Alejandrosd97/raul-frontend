@@ -1,7 +1,16 @@
-#sobre-nosotros {
+#sobre-nosotros{
+    margin:50px 0;
+    padding: 40px 0px;
+}
+
+.sobre-nosotros {
     width: 90%;
     max-width: 1200px;
     margin: auto;
+}
+
+.sobre-nosotros h2{
+    margin-top:0
 }
 
 .nosotros {
@@ -9,110 +18,23 @@
     margin-top: 40px;
 }
 
-/* .fisio {
-    width: 90%;
-    margin: auto;
-    border-radius: 5p
-    box-shadow: 3px 3px 5px hsla(199, 64%, 73%, 5%);  
-}
-
-.descripcion-fisio {
-    text-align: center;
-    padding: 20px 10px;
-
-    background-color: hsla(199, 64%, 73%, 5%);
-}
-
-.descripcion-fisio h4 {
-    margin: 0px;
-    color: #00509d;
-}
-
-.numero-colegiado {
-    color: rgba(0, 82, 158, 0.5);
-    margin-top: 0px
-}
-
-.fotoFisio {
-    width: 100%;
-    height: 335px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    display: block;
-    object-fit: cover;
-    object-position: 50% 10%
-}
-
-.textoNosotros {
-    width: 90%;
-    max-width: 800px;
-    margin: auto;
-    margin-bottom: 30px;
-    font-weight: bold;
-}
-
-@media screen and (min-width:530px) and (max-width:650px) {
-    .fotoFisio {
-        height: 500px;
-
-    }
-
-    .descripcion-fisio {
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (min-width:651px) and (max-width:767px) {
-    .fotoFisio {
-        height: 550px;
-    }
-
-    .descripcion-fisio {
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width:950px) {
-    .fotoFisio {
-        height: 600px;
-    }
-
-    .descripcion-fisio {
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (min-width:950px) {
-
-    .nosotros {
-        flex-direction: row;
-        width: 90%;
-        max-width: 1200px;
-        margin: auto;
-        justify-content: center;
-        gap: 30px;
-    }
-
-    .fisio {
-        width: 370px;
-        border-radius: 5px;
-        /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); 
-    }
-
-    .fotoFisio {
-        max-height: 355px;
-        object-fit: cover;
-        object-position: 50% 30%;
-    }
+.idiomas-info{
+    display:flex;
+    gap:20px;
+    margin-top:50px;
+    background-color: hsla(209, 100%, 31%, 6%);
 
 }
 
-@media screen and (min-width:600px) {
-    .textoNosotros {
-        font-size: 20px
-    }
-} */
+.titulos{
+    width:35%;
+    font-size: 24px;
+}
 
+.fisio {
+    width: 370px;
+    border-radius: 5px;
+}
 
 .fisio-nuevo {
     display: flex;
@@ -133,4 +55,14 @@
     width: 70%;
     padding: 8px 16px;
     background-color: hsla(209, 100%, 31%, 3%);
+}
+
+.deutsch-texto{
+    width: 65%;
+}
+
+.azul{
+    color: hsl(209, 100%, 31%);
+    font-weight:bold;
+
 }

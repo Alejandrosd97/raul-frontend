@@ -2,7 +2,8 @@
     min-height: 100px;
     text-align: center;
     position: sticky;
-    background-color: hsla(209, 100%, 31%, 50%);
+    background-color:rgba(0, 82, 158, 0.8);
+
     bottom: 0px;
     padding: 20px 0px;
 }

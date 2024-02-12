@@ -94,10 +94,16 @@ textarea {
 }
  
 
+.contact{
+    background-color: hsla(209, 100%, 31%, 5%);
+    padding:40px 0
+}
+
  .contenedor-contacto{
     width:90%;
     max-width: 500px;
     margin:auto;
+
  }
 
  .contenedor-contacto p{
@@ -139,7 +145,7 @@ textarea {
     position:absolute;
     left:0;
     padding-left: 20px;
-    color:#eee;
+    color:hsla(209, 100%, 31%, 5%);
     transition:ease 0.5s;
     font-size:20px;
 }
