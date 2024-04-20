@@ -34,11 +34,10 @@ export default function Carta(props) {
     <div className='carta' data-aos={props.fade}>
       <div className='imagen-caja'>
         <img src={props.imagen} alt="" />
+        <p className='descripcion-carta'>{props.texto.descripcion}</p>
       </div>
       <div className="contenido">
         <h4>{props.texto.titulo}</h4>
-        {/* <button className='carta-btn'>Ver mas</button> */}
-        <p className='descripcion-carta' >{props.texto.descripcion}</p>
       </div>
 
     </div>

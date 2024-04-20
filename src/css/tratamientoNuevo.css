@@ -4,7 +4,7 @@
     margin: auto;
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 290px 290px;
     gap: 30px;
 
 }
@@ -33,7 +33,7 @@
 @media screen and (max-width:900px) {
     .tratamientos-bloque {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: 400px 400px 400px;
     }
 }
 
