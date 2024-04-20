@@ -70,7 +70,7 @@ const textoAleman = [
     {
         fisios: [
             {
-                texto: 'Unser hochqualifiziertes Team passt jede Behandlung an Ihre individuellen Bedürfnisse an. Wir sind deine Verbündeten auf deinem Weg zu einem schmerzfreien und gesunden Leben. Erfahren Sie mehr über uns und wie wir Ihre Gesundheit verbessern können'
+                texto: 'Unser Team passt jede Behandlung an Ihre individuellen Bedürfnisse an. Wir sind deine Verbündeten auf deinem Weg zu einem schmerzfreien und gesunden Leben. Erfahren Sie mehr über uns und wie wir Ihre Gesundheit verbessern können'
             },
             {
                 raul: 'fisioterapeuta raul deutsch',
@@ -91,6 +91,12 @@ const textoAleman = [
             texto: 'Wir von RaulFisio sind stolz darauf, unsere Zusammenarbeit mit dem Tennisclub Gandia bekannt zu geben. Wir bieten spezialisierte physiotherapeutische Dienstleistungen während der Turniere im Club an, um den Sportlern eine erstklassige Betreuung zu bieten. Unser Team von Physiotherapeuten steht zur Verfügung, um die Leistungsfähigkeit zu erhalten und Verletzungen zu behandeln. Dies spiegelt unser Engagement für die Sportgemeinschaft von Gandia und unser Interesse am Wohlergehen der lokalen Athleten wider, denn wir sind eine vertrauenswürdige Quelle im Tennisclub Gandia',
             tenis: 'Tennisklub Gandia',
             volley: 'Volleyballverein Joan XXIII'
+        }
+    },
+    {
+        nosotros : {
+            idiomas_1 : "Bei Raulfisio wissen wir, wie wichtig es ist, unseren deutsch- und englischsprachigen Patienten ein komfortables und zugängliches Behandlungserlebnis zu bieten. Unser Team ist darauf vorbereitet, physiotherapeutische Leistungen auf Deutsch und Englisch anzubieten und so eine klare und effektive Kommunikation zu gewährleisten.",
+            idiomas_2 : "Wir sind bestrebt, ein Umfeld zu schaffen, in dem sich unsere deutschen Patienten wie zu Hause fühlen. Deutsche Pflege ist nicht nur eine Dienstleistung, sondern unser Engagement für die Bereitstellung eines qualitativ hochwertigen Pflegeerlebnisses, das auf die spezifischen Bedürfnisse jedes Einzelnen zugeschnitten ist. Vertrauen Sie darauf, dass wir uns in Ihrer Muttersprache um Ihr Wohlbefinden kümmern!"
         }
     }
 ]

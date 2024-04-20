@@ -11,6 +11,7 @@ import textoAleman from '../assets/dataAleman'
 import Contact from './Contact'
 import Navbar from './Navbar'
 import Tenis from './Tenis'
+import Idiomas from './Idiomas'
 import Whatsapp from './Whatsapp'
 import CookiesBaner from './CookiesBaner'
 import { useCookies } from "react-cookie";
@@ -48,6 +49,7 @@ export default function MainPage() {
 			<Denia texto={texto} />
 			<Tratamientos />
 			<Nosotros />
+			<Idiomas/>
 			<Tenis />
 			<Mapas />
 			<Contact />

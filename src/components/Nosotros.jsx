@@ -38,22 +38,6 @@ function Nosotros() {
                     </div>
                 </div>
             </div>
-
-            <div className='idiomas-info'>
-                <div className='titulos'>
-                <h5 className='azul'>
-                    WIR SPRECHEN DEUTSCH!
-                </h5>
-                <h5 className='azul'>
-                    WE SPEAK ENGLISH!
-                </h5>
-                </div>
-                
-                <div className='deutsch-texto'>
-                    <p>En Raulfisio, entendemos la importancia de brindar una experiencia de tratamiento cómoda y accesible para nuestros <span className='azul'>pacientes de habla alemana e inglesa</span> . Nuestro equipo altamente capacitado está preparado para ofrecer <span className='azul'>servicios de fisioterapia en alemán e inglés</span> servicios de fisioterapia en alemán e inglés, asegurando una comunicación clara y efectiva. </p>
-                    <p>Desde la evaluación inicial hasta la planificación del tratamiento y las sesiones de rehabilitación, nos esforzamos por crear un ambiente donde nuestros pacientes alemanes se sientan como en casa. La atención en alemán no es solo un servicio, es nuestro compromiso de proporcionar una experiencia de atención de calidad adaptada a las necesidades específicas de cada individuo. ¡Confía en nosotros para cuidar de tu bienestar en tu idioma nativo!</p>
-                </div>
-            </div>
             </div>
 
         </section>

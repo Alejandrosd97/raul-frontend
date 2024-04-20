@@ -67,7 +67,7 @@ const textoEspanol = [
     {
         fisios: [
             {
-                texto: 'Nuestro equipo altamente calificado personaliza cada tratamiento para satisfacer tus necesidades únicas. Somos tus aliados en tu camino hacia una vida sin dolor y con salud óptima. Conoce más sobre nosotros y cómo podemos marcar la diferencia en tu salud.'
+                texto: 'Nuestro equipo personaliza cada tratamiento para satisfacer tus necesidades únicas. Somos tus aliados en tu camino hacia una vida sin dolor y con salud óptima. Conoce más sobre nosotros y cómo podemos marcar la diferencia en tu salud.'
             },
             {
                 raul: 'fisioterapeuta raul',
@@ -88,6 +88,12 @@ const textoEspanol = [
             tenis: 'Cub de Tenis Gandia',
             volley: 'Club de VolleyBall Joan XXIII',
             texto: 'En RaulFisio, nos enorgullece anunciar nuestra colaboración con el Club de Tenis de Gandia. Ofrecemos servicios de fisioterapia especializados durante los torneos en el club, brindando atención de primer nivel a los atletas. Nuestro equipo de fisioterapeutas estará presente para mantener el rendimiento y tratar lesiones. Esto refleja nuestro compromiso con la comunidad deportiva de Gandia y nuestro interés en el bienestar de los atletas locales, siendo un recurso confiable en el Club de Tenis de Gandia.'
+        }
+    },
+    {
+        nosotros : {
+            idiomas_1 : "En Raulfisio, entendemos la importancia de brindar una experiencia de tratamiento cómoda y accesible para nuestros pacientes de habla alemana e inglesa . Nuestro equipo está preparado para ofrecer servicios de fisioterapia en alemán e inglés, asegurando una comunicación clara y efectiva. ",
+            idiomas_2 : "Nos esforzamos por crear un ambiente donde nuestros pacientes alemanes se sientan como en casa. La atención en alemán no es solo un servicio, es nuestro compromiso de proporcionar una experiencia de atención de calidad adaptada a las necesidades específicas de cada individuo. ¡Confía en nosotros para cuidar de tu bienestar en tu idioma nativo!"
         }
     }
 ]

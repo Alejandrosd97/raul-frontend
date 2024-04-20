@@ -67,22 +67,6 @@ function Mapas() {
                         <button ref={deniaButton} value='denia' className='toggle-btn' style={{ 'color': '#004e98' }} onClick={(e) => rightBtn(e)}>Denia</button>
                     </div>
                 </div>
-
-
-
-
-                {/* <button 
-                    className= {mapa === 'gandia' ? 'clicked' : 'not-clicked' }
-                    onClick={(e)=>cambiarMapa(e)}
-                    value='gandia'>
-                    Gandía
-                </button>
-                <button
-                    className={mapa === 'denia' ? 'clicked' : 'not-clicked' }
-                    onClick={(e)=>cambiarMapa(e)}
-                    value='denia'>
-                    Denia
-                </button> */}
             </div>
 
 

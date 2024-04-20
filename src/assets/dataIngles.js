@@ -69,7 +69,7 @@ const textoIngles = [
     {
         fisios: [
             {
-                texto: 'Our highly qualified team customises each treatment to meet your unique needs.We are your allies on your path to a life without pain and with optimal health. Learn more about us and how we can make a difference in your health'
+                texto: 'Our team customises each treatment to meet your unique needs.We are your allies on your path to a life without pain and with optimal health. Learn more about us and how we can make a difference in your health'
             },
             {
                 raul: 'fisioterapeuta raul ingles',
@@ -91,7 +91,14 @@ const textoIngles = [
             tenis: 'Gandia Tennis Club',
             volley: 'Volleyball Club Joan XXIII'
         }
+    },
+    {
+        nosotros : {
+            idiomas_1 : "At Raulfisio, we understand the importance of providing a comfortable and accessible treatment experience for our German and English speaking patients. Our team is prepared to offer physiotherapy services in German and English, ensuring clear and effective communication.",
+            idiomas_2 : "We strive to create an environment where our German patients feel at home. German care is not just a service, Treating patients in German is not just a service, it is our commitment to providing a quality care experience tailored to the specific needs of each individual. Trust us to take care of your well-being in your native language!"
+        }
     }
+    
 
 ]
 

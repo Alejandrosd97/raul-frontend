@@ -3,13 +3,9 @@
     width: 100%;
     height: 100%;
     border-radius: 2px;
-    overflow: hidden;
 }
 
 .imagen-caja {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
 }
@@ -20,45 +16,43 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 0.5s;
     border-radius: 2px;
 }
 
 .contenido {
-    position: absolute;
-    top: 85%;
-    left: 0;
-    z-index: 50;
-    width: 100%;
     padding: 16px 24px;
     color: white;
-    background-color: #fef885;
-    transition: top 0.5s
 }
 
 .contenido h4 {
-    color: white;
     font-size: 32px;
     margin-bottom: 50px;
     color: rgba(0, 82, 158, 1);
 }
 
-.carta:hover>.contenido {
+/* .carta:hover>.contenido {
     top: 48%;
     transition: top 0.5s
 }
 
 .carta:hover>.contenido h4 {
     margin-bottom: 16px;
-}
+} */
 
 .carta-btn {
     border: 2px solid white;
     color: white
 }
 
-@media screen and (max-width:600px) {
+.descripcion-carta{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* @media screen and (max-width:600px) {
     .carta {
         height: 300px;
     }
-}
+} */

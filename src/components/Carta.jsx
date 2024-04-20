@@ -12,23 +12,23 @@ export default function Carta(props) {
   }, [])
 
 
-  const mostrarCarta = (e) => {
-    e.target.parentElement.classList.add('activo')
-    e.target.parentElement.previousElementSibling.firstChild.classList.add('active-img')
-    e.target.classList.add('h4-active')
-    e.target.nextElementSibling.nextElementSibling.classList.add('visible')
-    e.target.classList.add('left')
-  }
+  // const mostrarCarta = (e) => {
+  //   e.target.parentElement.classList.add('activo')
+  //   e.target.parentElement.previousElementSibling.firstChild.classList.add('active-img')
+  //   e.target.classList.add('h4-active')
+  //   e.target.nextElementSibling.nextElementSibling.classList.add('visible')
+  //   e.target.classList.add('left')
+  // }
 
-  const cerrarCarta = (e) => {
-    e.target.parentElement.classList.remove('activo')
-    e.target.parentElement.previousElementSibling.firstChild.classList.remove('active-img')
-    // e.target.nextElementSibling.classList
-    e.target.previousElementSibling.previousElementSibling.classList.remove('h4-active')
-    e.target.previousElementSibling.previousElementSibling.classList.remove('left')
+  // const cerrarCarta = (e) => {
+  //   e.target.parentElement.classList.remove('activo')
+  //   e.target.parentElement.previousElementSibling.firstChild.classList.remove('active-img')
+  //   // e.target.nextElementSibling.classList
+  //   e.target.previousElementSibling.previousElementSibling.classList.remove('h4-active')
+  //   e.target.previousElementSibling.previousElementSibling.classList.remove('left')
 
-    e.target.classList.remove('visible')
-  }
+  //   e.target.classList.remove('visible')
+  // }
 
   return (
     <div className='carta' data-aos={props.fade}>
@@ -36,10 +36,11 @@ export default function Carta(props) {
         <img src={props.imagen} alt="" />
       </div>
       <div className="contenido">
-        <h4 onClick={(e) => mostrarCarta(e)}>{props.texto.titulo}</h4>
-        <p className='hola' >{props.texto.descripcion}</p>
-        <button className='carta-btn'>Ver mas</button>
+        <h4>{props.texto.titulo}</h4>
+        {/* <button className='carta-btn'>Ver mas</button> */}
+        <p className='descripcion-carta' >{props.texto.descripcion}</p>
       </div>
+
     </div>
   )
 }
