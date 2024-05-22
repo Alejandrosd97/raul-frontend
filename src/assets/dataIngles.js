@@ -34,7 +34,7 @@ const textoIngles = [
     },
     {
         tratamientos: [
-            { texto: 'At RaulFisio, we offer a wide range of physiotherapy services to address your individual needs. Our services include:' },
+            { texto: 'At Raulfisio, we offer a wide range of physiotherapy services to address your individual needs. Our services include:' },
             {
                 titulo: 'Manual therapy',
                 descripcion: `Manual therapy is a form of treatment in which physical therapists use their hands to assess and treat muscle, joint, and soft tissue problems. This technique may include therapeutic massages, stretches, joint mobilizations, and myofascial release techniques. Manual therapy is used to reduce pain, improve mobility, and restore normal body function`

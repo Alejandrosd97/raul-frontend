@@ -15,10 +15,10 @@ function Hero() {
   }, [])
 
   return (
-    <div className='hero' >
+    <div className='hero'>
       <div className='descripcion-hero' data-aos='fade-up'>
         <h2 className='titulo-principal'>Clínica Raulfisio</h2>
-        <p className='subtitle'>{idioma[6].hero.main}</p>
+        <p className='subtitle'>{idioma[6].hero.main}</p> 
         <p className='negrita'>We speak English!</p>
         <p className='negrita'>Wir sprechen Deutsch!</p>
         <div className="main-buttons">

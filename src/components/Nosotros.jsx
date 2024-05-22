@@ -9,7 +9,7 @@ function Nosotros() {
 
 
     return (
-        <section id='sobre-nosotros'>
+        <section id='sobre-nosotros'> 
             <div className='sobre-nosotros'>
             <h2>{idioma[2].titulos.sobreNosotros}</h2>
             <p className='textoNosotros'>

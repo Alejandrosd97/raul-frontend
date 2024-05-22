@@ -32,7 +32,7 @@ const textoEspanol = [
     },
     {
         tratamientos: [
-            { texto: 'En RaulFisio, ofrecemos una amplia gama de servicios de fisioterapia para abordar tus necesidades individuales. Nuestros servicios incluyen:' },
+            { texto: 'En Raulfisio, ofrecemos una amplia gama de servicios de fisioterapia para abordar tus necesidades individuales. Nuestros servicios incluyen:' },
             {
                 titulo: 'Terapia manual',
                 descripcion: `La terapia manual es una modalidad de tratamiento en la que los fisioterapeutas utilizan sus manos para evaluar y tratar problemas musculares, articulares y del tejido blando`

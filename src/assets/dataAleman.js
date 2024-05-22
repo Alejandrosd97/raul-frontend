@@ -35,7 +35,7 @@ const textoAleman = [
     },
     {
         tratamientos: [
-            { texto: 'Bei RaulFisio, bieten wir eine breite Palette von physiotherapeutischen Dienstleistungen, um Ihre individuellen Bedürfnisse zu adressieren. Unsere Dienstleistungen umfassen:' },
+            { texto: 'Bei Raulfisio, bieten wir eine breite Palette von physiotherapeutischen Dienstleistungen, um Ihre individuellen Bedürfnisse zu adressieren. Unsere Dienstleistungen umfassen:' },
             {
                 titulo: 'Manuelle Therapie',
                 descripcion: `Manuelle Therapie ist eine Behandlungsform, bei der Physiotherapeuten ihre Hände benutzen, um Muskel-, Gelenk- und Weichteilprobleme zu beurteilen und zu behandeln. Diese Technik kann therapeutische Massagen, Stretching, Gelenkmobilisierungen und myofasziale Freisetzungstechniken umfassen. Manuelle Therapie wird verwendet, um Schmerzen zu lindern, die Beweglichkeit zu verbessern und die normale Funktion des Körpers wiederherzustellen`

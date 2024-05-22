@@ -39,7 +39,7 @@
     max-width: 1200px;
     margin:auto;
     padding: 60px 0
-}
+} 
 
 .titulos{
     width:35%;
@@ -75,8 +75,18 @@
     border-radius:2px
 }
 
+.info-fisio h3 {
+    color: hsl(209, 100%, 31%);
+}
+
+.info-fisio span{
+    font-size:14px;
+    letter-spacing: 1px
+}
+
 .deutsch-texto{
     width: 65%;
+    font-size: 20px;
 }
 
 .azul, .azul-titulo{
